@@ -1,0 +1,649 @@
+@import "variables";
+@import "mixins";
+
+p {
+    line-height: 1.8 !important;
+}
+
+#infos-header {
+    li {
+        font-size: 1.5rem;
+        color: $darker-yellow;
+    }
+}
+
+nav {
+    background-color: $dark-yellow;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.dropdown-menu {
+    background-color: $dark-yellow;
+    border: none;
+    border-radius: 0;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $yellow;
+            background-color: inherit;
+        }
+    }
+}
+
+#social-icons-nav {
+    li {
+        font-size: 1.3rem;
+    }
+}
+
+.active {
+    color: $yellow !important;
+}
+
+.btn-link {
+    text-decoration: none;
+    background-color: $darker-yellow;
+    padding: .8em 2em;
+    color: white !important;
+    border: none;
+    border-radius: 50px;
+
+    &:hover {
+        color: $yellow !important;
+        box-shadow: 0 0 5px $darker-yellow !important;
+        text-decoration: none;
+    }
+}
+
+#main-header {
+    @include background-image("/assets/img/header-bg.jpg", $dark-yellow);
+    background-attachment: fixed;
+    height: 670px;
+
+    h1 {
+        margin-top: 2.3em;
+        color: $yellow;
+    }
+
+    p {
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    img {
+        position: absolute;
+        margin-top: 21.3em;
+    }
+
+    a {
+        position: relative;
+        z-index: 1;
+        top: 50px;
+    }
+}
+
+#header {
+    @include background-image("/assets/img/logos/vague.png", $dark-yellow);
+    padding: 5em 0;
+
+    h1 {
+        color: $yellow;
+    }
+}
+
+.section-header {
+    padding: 5em 0;
+
+    h2, h4 {
+        text-align: center;
+    }
+
+    h2 {
+        color: $dark-yellow;
+        margin-bottom: .5em;
+    }
+
+    h4 {
+        color: $darker-yellow;
+        font-weight: bold;
+    }
+
+    hr {
+        width: 100px;
+        border-width: 10px;
+        border-color: $darker-yellow;
+        border-radius: 50px;
+        margin: 0 auto;
+    }
+
+    .lead {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+#section-about {
+    margin-bottom: 4em;
+
+    h3 {
+        color: $darker-yellow;
+        font-weight: bold;
+    }
+
+    span {
+        font-weight: bold;
+        color: $darker-yellow;
+    }
+
+    li {
+        color: $darker-yellow;
+        font-size: 1.3rem;
+        margin-right: .5em;
+    }
+
+    .col {
+        padding: 0 2em;
+    }
+}
+
+#section-word {
+    padding: 5em 0;
+    @include background-image("/assets/img/logos/vague.png", $dark-yellow);
+
+    h5 {
+        color: $yellow;
+    }
+
+    li {
+        color: $lighter-yellow;
+    }
+
+    li {
+        font-size: 3rem;
+        padding: 0 .3em;
+    }
+
+    p {
+        color: white;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+.section-expertise {
+    margin-bottom: 3em;
+
+    li {
+        font-size: 3.5rem;
+        color: $darker-yellow;
+        padding-right: .5em;
+    }
+
+    h4 {
+        color: $darker-yellow;
+    }
+
+    a {
+        color: $darker-yellow;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .col {
+        padding: 2em;
+    }
+}
+
+#section-contact-now {
+    @include background-image("/assets/img/logos/vague.png", $dark-yellow);
+    padding: 5em 0;
+
+    p {
+        color: $yellow;
+        font-size: 1.5rem;
+    }
+}
+
+.section-formations {
+    a {
+        color: $lighter-yellow;
+
+        &:hover {
+            color: $yellow;
+            text-decoration: none;
+        }
+    }
+
+    .col {
+        padding: 0 5em;
+    }
+
+    .desc {
+        background: linear-gradient(to bottom, $darker-yellow, $dark-yellow);
+        padding: 2em 2em;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+
+        &:hover {
+            box-shadow: 0 0 5px $darker-yellow !important;
+        }
+    }
+
+    p {
+        color: white;
+        margin-top: 1em;
+    }
+}
+
+#section-news {
+    .col-lg-7, .col {
+        background: linear-gradient(to right, $darker-yellow, $dark-yellow);
+        border: none;
+        border-radius: 18px;
+        padding: 2em;
+        padding-top: 5em;
+        margin: 0 1em;
+
+    	a:nth-child(1) {
+    	    color: $yellow;
+    	    font-size: 1.5rem;
+
+    	    &:hover {
+        		color: $yellow;
+        		text-decoration: none;
+    	    }
+    	}
+    }
+
+    // .col-lg-7 {
+    //     @include background-image("/assets/img/formations/ressources-humaines.jpg", $dark-yellow);
+    // }
+
+    p {
+	    color: white;
+    }
+}
+
+._text-muted {
+    color: white;
+    opacity: (0.5);
+}
+
+.read-more {
+    color: $lighter-yellow;
+
+    &:hover {
+    	color: $yellow;
+    	text-decoration:  none;
+    }
+}
+
+#section-newsletter {
+    @include background-image("/assets/img/logos/vague.png", $dark-yellow);
+    padding: 5em 0;
+    margin-top: 7em;
+
+    p {
+        color: $yellow;
+        font-size: 1.5rem;
+    }
+}
+
+#header, #section-newsletter {
+    input[type=email], input[type=search] {
+        border: none;
+        border-radius: 50px;
+        padding: .8em 1em;
+        width: 80%;
+    }
+
+    input[type=search] {
+        width: 50%;
+    }
+
+    input[type=submit] {
+        margin-left: 1em;
+    }
+}
+
+#section-testimonials {
+    .col {
+        background: linear-gradient(to bottom, $darker-yellow, $dark-yellow);
+        border: none;
+        border-radius: 18px;
+        padding: 1em 2em;
+        margin: 2em 1em;
+        position: relative;
+    }
+
+    img {
+        width: 130px;
+        border: 2px solid $darker-yellow;
+        border-radius: 50%;
+        position: absolute;
+        top: -80px;
+        left: 110px;
+    }
+
+    li {
+        margin-top: 1.5em;
+        margin-bottom: .5em;
+        font-size: 3rem;
+        color: $lighter-yellow;
+    }
+
+    h5 {
+        color: $yellow;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+footer {
+    background: linear-gradient(to right, $darker-yellow, $dark-yellow);
+    padding: 3em 0;
+    color: white;
+
+    h5, h3 {
+        color: $yellow;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    .col {
+        hr {
+            width: 100px;
+            border-width: 5px;
+            border-color: $lighter-yellow;
+            border-radius: 50px;
+            margin: 0;
+        }
+
+        .fas {
+            font-size: 1.3rem;
+        }
+    }
+
+    ul {
+        a {
+            color: white;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+
+    p {
+        a {
+            color: $yellow;
+
+            &:hover {
+                color: $yellow;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .list-inline {
+        li {
+            font-size: 1.3rem;
+        }
+    }
+
+    hr {
+        border-width: 5px;
+        border-color: $lighter-yellow;
+        border-radius: 50px;
+    }
+}
+
+#section-certifications {
+    .col {
+        padding: 0 1em !important;
+    }
+
+    h4 {
+        color: $lighter-yellow;
+    }
+}
+
+#section-fdfp {
+    li {
+        color: $darker-yellow;
+    }
+
+    li {
+        font-size: 3.5rem;
+        padding-right: .5em;
+    }
+
+    .col {
+        padding: 2em;
+    }
+}
+
+#section-contact {
+    margin-bottom: 5em;
+
+    .col-4 {
+        background: linear-gradient(to bottom, $darker-yellow, $dark-yellow);
+        border: none;
+        border-radius: 18px;
+        padding: 2em;
+        color: white;
+    }
+
+    li {
+        font-size: 1.3rem;
+    }
+
+    input[type=text], input[type=email], textarea {
+        border: 1px solid black;
+        border-radius: 18px;
+        border-color: $darker-yellow;
+        padding: .8em 1em;
+    }
+
+    input[type=text], input[type=email] {
+        border-radius: 50px !important;
+    }
+
+    label {
+        margin-left: .5em;
+    }
+
+    h4 {
+        color: $yellow;
+    }
+
+    hr {
+        width: 100px;
+        border-width: 5px;
+        border-color: $lighter-yellow;
+        border-radius: 50px;
+        margin: 0;
+    }
+}
+
+#section-presentation {
+    margin-top: 5em;
+
+    h3 {
+        color: $darker-yellow;
+        font-weight: bold;
+    }
+
+    span {
+        font-weight: bold;
+        color: $darker-yellow;
+    }
+
+    li {
+        color: $darker-yellow;
+        font-size: 1.3rem;
+        margin-right: .5em;
+    }
+
+    .col {
+        padding: 0 2em;
+    }
+}
+
+#section-team {
+    .col {
+        padding: 0 2em;
+
+        div {
+            background: linear-gradient(to bottom, $darker-yellow, $dark-yellow);
+            padding: .3em .5em;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+
+            &:hover {
+                box-shadow: 0 0 5px $darker-yellow !important;
+            }
+
+            h5 {
+                color: $yellow;
+            }
+
+            p {
+                margin-bottom: .4em;
+            }
+        }
+    }
+}
+
+#section-jobs {
+    margin: 5em 0;
+
+    h4 {
+        color: $darker-yellow;
+    }
+
+    .title {
+        background: linear-gradient(to bottom, $darker-yellow, $dark-yellow);
+        border: none;
+        border-radius: 18px;
+        padding: 1.5em;
+        color: white;
+        margin-top: 2em;
+    }
+
+    .col-8 {
+        padding-left: 5em;
+    }
+}
+
+#section-blog {
+    .container {
+        padding: 5em 0;
+    }
+
+    .posts {
+        background: linear-gradient(to bottom, $darker-yellow, $dark-yellow);
+        border: none;
+        border-radius: 18px;
+        padding: 1.5em;
+        color: white;
+
+        h4 {
+            color: $yellow !important;
+        }
+
+        hr {
+            width: 100px;
+            border-width: 5px;
+            border-color: $lighter-yellow;
+            border-radius: 50px;
+            margin: 0;
+        }
+    }
+
+    h1 {
+        color: $darker-yellow;
+    }
+
+    h4 {
+        color: $darker-yellow;
+    }
+
+    a {
+        color: white !important;
+        text-decoration: none !important;
+
+        &:hover {
+            color: $lighter-yellow !important;
+            text-decoration: none !important;
+        }
+    }
+
+    ul {
+        line-height: 1.8;
+    }
+
+    img {
+        margin-bottom: 2em;
+    }
+
+    textarea {
+        resize: none;
+    }
+}
+
+.pagination-link {
+    color: $darker-yellow;
+
+    &:hover {
+        color: $darker-yellow;
+        text-decoration: underline;
+    }
+}
+
+#section-locaux {
+    & > div:last-child {
+        margin: 5em;
+    }
+}
+
+.intro {
+    padding: 5em 0;
+}
+
+._title {
+    color: $darker-yellow !important;
+}
+
+#section-partners {
+    .container {
+        div {
+            padding-bottom: 5em;
+        }
+    }
+
+    img {
+        width: 80px;
+    }
+}
+
+#mapid {
+    height: 500px;
+}
