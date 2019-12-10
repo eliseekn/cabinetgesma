@@ -5,7 +5,7 @@ function register_theme_scripts() {
         '/vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css' );
     wp_enqueue_style( 'fontawesome', get_template_directory_uri() .
         '/vendor/fontawesome-5.11.2/css/all.min.css' );
-    wp_enqueue_style( 'leaflet', get_template_directory_uri() . '/vendor/leaflet/leaflet.css' );
+    wp_enqueue_style( 'mapbox', 'https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/style.css' );
 
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/vendor/jquery-3.4.1.min.js',
@@ -14,9 +14,9 @@ function register_theme_scripts() {
         array(), null, true );
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() .
         '/vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js', array(), null, true );
-    wp_enqueue_script( 'leaflet', get_template_directory_uri() .
-        '/vendor/leaflet/leaflet.js', array(), null, true );
-    wp_enqueue_style( 'script', get_template_directory_uri() . '/assets/js/script.js' );
+    wp_enqueue_script( 'mapbox', 'https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js', array(), null, false );
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js',
+        array(), null, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'register_theme_scripts' );
