@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<header class="text-center" id="header" style="<?php echo set_background('/assets/img/logos/vague.png'); ?>">
+<header class="text-center" id="header" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
     <div class="container">
         <h1>Blog</h1>
     </div>
@@ -29,7 +29,7 @@ if( have_posts() ) {
                 </div>
 
                 <div class="mt-5">
-                    <h4>Derniers commentaires (<?php comments_number( '0', '1', '%' ) ?>)</h4>
+                    <h4>Commentaires (<?php comments_number( '0', '1', '%' ) ?>)</h4>
                     <?php
                     $comments = get_comments( array( 'post_id' => get_the_ID() ) );
                     foreach($comments as $comment) {

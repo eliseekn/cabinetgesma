@@ -20,19 +20,19 @@
                                 <a class="nav-link pl-0" href="<?php echo home_url( '/' ); ?>">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pl-0" href="<?php echo home_url( '/a-propos' ); ?>">A propos</a>
+                                <a class="nav-link pl-0" href="<?php echo site_url( '/a-propos' ); ?>">A propos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pl-0" href="<?php echo home_url( '/expertise' ); ?>">Expertise</a>
+                                <a class="nav-link pl-0" href="<?php echo site_url( '/expertise' ); ?>">Expertise</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pl-0" href="<?php echo home_url( '/formations' ); ?>">Formations</a>
+                                <a class="nav-link pl-0" href="<?php echo site_url( '/formations' ); ?>">Formations</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link pl-0" href="#">Offres d'emploi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pl-0" href="<?php echo home_url( '/contact' ); ?>">Contact</a>
+                                <a class="nav-link pl-0" href="<?php echo site_url( '/contact' ); ?>">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -68,10 +68,10 @@
                 </div>
 
                 <hr>
-                <p class="mt-4">
-                    © 2019 Cabinet GESMA.
-                    <a href="">Tous droits réservés.</a>
-                </p>
+                <div class="d-flex justify-content-between mt-4">
+                    <p>© 2019 Cabinet GESMA. Tous droits réservés.</p>
+                    <p><a href="<?php echo site_url( '/politique-de-confidentialite' ); ?>">Politique de confidentialité.</a></p>
+                </div>
             </div>
         </footer>
 

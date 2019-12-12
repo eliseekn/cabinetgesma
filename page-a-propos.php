@@ -4,68 +4,61 @@
 
 <section id="section-presentation">
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3 class="mb-4">Qui sommes-nous?</h3>
-                <p class="text-justify">
-                    Le <span>Cabinet GESMA</span> est un cabinet de conseil en gestion
-                    d'entreprise. Nous épousons plusieurs branches dans le
-                    domaine du marketing et du management.
-                </p>
+        <img src="<?php echo get_template_directory_uri() . '/assets/img/team-all.jpg'?>" class="img-fluid float-right pl-4" alt="" width="550px">
 
-                <p class="text-justify">
-                    Nous accompagnons au quotidien des responsables et dirigeants
-                    de PME soucieux d’une meilleure gestion et de la bonne
-                    notoriété de leurs structures.
-                </p>
+        <div>
+            <p class="text-justify">
+                La Société à Responsabilité Limitée dénommée <span>GETION MARKETING MANAGEMENT</span>,
+                par abréviation <span>CABINET GESMA SARL</span>, est située à Daloa,
+                Quartier Baoulé, rue de l'ancienne Station Bra Kanon, à 150 m de
+                la Chambre Régionale des Métiers.
+            </p>
 
-                <h3 class="my-4">Nos services</h3>
-                <p class="text-justify">
-                    <p>
-                        <li class="far fa-plus-square"></li>
-                        <span>Assistance</span> <br>
-                        Consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
-                    </p>
+            <p class="text-justify">
+                Fondée par Feu DJIEZION Téhé Jérôme, le Centre d'assitance aux
+                techniques de Gestion, du Marketing et du Management est progressivement
+                passé d'entreprise individuelle à Société SARL en 2010. Cependant,
+                suite au décès du partriache, une réfome lancée en 2016 à mener
+                l'entreprise familiale à sa structure juridique actuelle.
+            </p>
 
-                    <p>
-                        <li class="far fa-plus-square"></li>
-                        <span>Conseil</span> <br>
-                        Consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
-                    </p>
+            <p class="text-justify">
+                Ainsi, depuis 1998, le Cabinet accompagne au quotiden les entreprises
+                locales dans leur développement en construisant avec elles une relation
+                pofessionnelle de confiance basée sur des valeurs forte.
+            </p>
 
-                    <p>
-                        <li class="far fa-plus-square"></li>
-                        <span>Formation</span> <br>
-                        Consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
-                    </p>
-                </p>
-            </div>
+            <p class="text-justify">
+                Fier de son histoire et de l'expérience acquise, le Cabinet GESMA
+                s'est engagé à participer à la performance et à la pérénité de ces
+                entreprises, afin que celles-ci soient compétitives dans un environnement
+                économique national en pérpétuelle mutation.
+            </p>
 
-            <div class="col">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/team-all.jpg'?>" class="img-fluid" alt="">
-            </div>
-        </div>
+            <p class="text-justify">
+                Pour y parvenir, la mission du Cabinet sera de développer un accompagnement
+                d'expertise conseil à l'échelle de ces PME.
+            </p>
 
-        <div class="row mt-3">
-            <div class="col">
-                <p class="text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Magnam cum a tenetur quia, beatae nam quae repellendus ipsum,
-                    modi quis numquam voluptatum praesentium, non sit! Sint fuga
-                    repellendus dolorum, voluptas?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
+            <p class="text-justify">
+                La pratique du métier de conseil et l'exécution des missions qui
+                sont confiées au Cabinet s'articulent autour de cinq valeurs que
+                sont : l'ETHIQUE, la METHODE, la RIGUEUR, l'HUMILITE et la PATIENCE.
+            </p>
+
+            <p class="text-justify">
+                Ces valeurs fortes concrétisent la culture d'entreprise et
+                guident les dirigeants, les employés et les stagiaires dans leurs
+                relations quotidiennes avec les Clients, les Partenaires et les
+                Collègues.
+            </p>
+
+            <p class="text-justify">
+                Ainsi, le personnel du Cabinet GESMA a toujours su préserver un
+                esprit de famille et de courtoisie dans l'exercice de la profession,
+                tout en plaçant la satisfaction du Client au centre de la culture
+                d'entreprise.
+            </p>
         </div>
     </div>
 </section>
@@ -212,7 +205,7 @@
     </div>
 
     <div class="text-center">
-        <a href="" class="btn-link">Voir plus de photos</a>
+        <a href="<?php echo site_url( '/gallerie-photos' ); ?>#locaux" class="btn-link">Voir plus de photos</a>
     </div>
 </section>
 

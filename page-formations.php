@@ -2,7 +2,7 @@
 
 <?php include_once( get_template_directory() . '/templates/page-header.php' ); ?>
 
-<section class="section-header">
+<section class="section-header" id="certifications">
     <div class="container text-center">
         <h4>Certifications Professionnelles</h4>
         <h2>Domaines de formations certifiantes</h2>
@@ -92,11 +92,11 @@
     </div>
 
     <div class="text-center">
-        <a href="" class="btn-link">Voir plus de photos</a>
+        <a href="<?php echo site_url( '/gallerie-photos' ); ?>#formations" class="btn-link">Voir plus de photos</a>
     </div>
 </section>
 
-<section class="section-header">
+<section class="section-header" id="fdfp">
     <div class="container text-center">
         <h4>Formations FDFP</h4>
         <h2>Domaines d'habilitations agréés</h2>

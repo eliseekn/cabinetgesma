@@ -28,35 +28,38 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form action="" method="post">
+                <form id="contact-form">
                     <div class="d-flex justify-content-between mb-4">
                         <div class="d-flex flex-column">
                             <label for="">Nom (Obligatoire)</label>
-                            <input type="text" name="name" required="required" style="width:330px">
+                            <input type="text" id="contact-name" required="required" style="width:330px">
                         </div>
 
                         <div class="d-flex flex-column">
                             <label for="">Email (Obligatoire)</label>
-                            <input type="email" name="email" required="required" style="width:330px">
+                            <input type="email" id="contact-email" required="required" style="width:330px">
                         </div>
                     </div>
 
                     <div class="d-flex flex-column mb-4">
                         <label for="">Téléphone (Obligatoire)</label>
-                        <input type="text" name="number" required="required">
+                        <input type="text" id="contact-phone" required="required">
                     </div>
 
                     <div class="d-flex flex-column mb-4">
                         <label for="">Objet (Obligatoire)</label>
-                        <input type="text" name="subject" required="required">
+                        <input type="text" id="contact-subject" required="required">
                     </div>
 
                     <div class="d-flex flex-column mb-4">
                         <label for="">Message (Obligatoire)</label>
-                        <textarea name="message" required="required" rows="8"></textarea>
+                        <textarea id="contact-message" required="required" rows="8"></textarea>
                     </div>
 
-                    <input type="submit" name="" value="Envoyer" class="btn-link">
+                    <div class="d-flex flex-direction-between">
+                        <input type="submit" value="Envoyer" class="btn-link">
+                        <p id="feedback-message"></p>
+                    </div>
                 </form>
             </div>
 

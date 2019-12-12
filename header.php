@@ -52,31 +52,31 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="<?php echo home_url( '/' ); ?>">Accueil</a>
+                            <a class="nav-link <?php if (is_front_page()) { echo ' active'; } ?>" href="<?php echo home_url( '/' ); ?>">Accueil</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo home_url( '/a-propos' ); ?>">A propos</a>
+                            <a class="nav-link <?php if (is_page( 'a-propos' )) { echo ' active'; } ?>" href="<?php echo site_url( '/a-propos' ); ?>">A propos</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle <?php if (is_page( 'expertise' )) { echo ' active'; } ?>" href="" id="navbarDropdownMenu1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Expertise
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu1">
-                                <a class="dropdown-item" href="<?php echo home_url( '/expertise' ); ?>#gestion">Gestion</a>
-                                <a class="dropdown-item" href="<?php echo home_url( '/expertise' ); ?>#marketing">Marketting</a>
-                                <a class="dropdown-item" href="<?php echo home_url( '/expertise' ); ?>#management">Management</a>
+                                <a class="dropdown-item" href="<?php echo site_url( '/expertise' ); ?>#gestion">Gestion</a>
+                                <a class="dropdown-item" href="<?php echo site_url( '/expertise' ); ?>#marketing">Marketting</a>
+                                <a class="dropdown-item" href="<?php echo site_url( '/expertise' ); ?>#management">Management</a>
                             </div>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle <?php if (is_page( 'formations' )) { echo ' active'; } ?>" href="" id="navbarDropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Formations
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu2">
-                                <a class="dropdown-item" href="<?php echo home_url( '/formations' ); ?>#certifications">Certifications professionnelles</a>
-                                <a class="dropdown-item" href="<?php echo home_url( '/formations' ); ?>#fdfp">Formations agréées FDFP</a>
+                                <a class="dropdown-item" href="<?php echo site_url( '/formations' ); ?>#certifications">Certifications professionnelles</a>
+                                <a class="dropdown-item" href="<?php echo site_url( '/formations' ); ?>#fdfp">Formations agréées FDFP</a>
                             </div>
                         </li>
 
@@ -85,7 +85,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo home_url( '/contact' ); ?>">Contact</a>
+                            <a class="nav-link <?php if (is_page( 'contact' )) { echo ' active'; } ?>" href="<?php echo site_url( '/contact' ); ?>">Contact</a>
                         </li>
                     </ul>
 
