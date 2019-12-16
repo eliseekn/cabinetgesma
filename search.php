@@ -2,19 +2,11 @@
 
 <header class="text-center" id="header" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
     <div class="container">
-        <h1>Blog</h1>
+        <h1>Résultats de la recherche pour "<?php echo get_search_query() ?>"</h1>
     </div>
 </header>
 
-<?php
-// $args = array(
-//     'post_type' => 'post',
-//     'posts_per_page' => 2
-// );
-//
-// $posts = new WP_Query( $args );
-
-if( have_posts() ) { ?>
+<?php if( have_posts() ) { ?>
 
 <section id="section-blog">
     <div class="container">
@@ -32,7 +24,7 @@ if( have_posts() ) { ?>
                 }
                 ?>
 
-                <h4><?php the_title(); ?></h4>
+                <h4><?php echo the_title(); ?></h4>
                 <p class="text-muted">Publié le <?php the_date(); ?></p>
                 <div class="text-justify mb-4">
                     <?php the_content(); ?>
@@ -61,6 +53,18 @@ if( have_posts() ) { ?>
             ?>
 
         </div>
+    </div>
+</section>
+
+<?php } else { ?>
+
+<section class="section-header">
+    <div class="container text-center">
+        <p class="lead mb-4">
+            Désolé, aucun résultat n'a été trouvé.
+        </p>
+
+        <a href="<?php echo home_url( '/' ); ?>" class="btn-link">Retourner à l'accueil</a>
     </div>
 </section>
 

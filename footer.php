@@ -29,7 +29,7 @@
                                 <a class="nav-link pl-0" href="<?php echo site_url( '/formations' ); ?>">Formations</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pl-0" href="#">Offres d'emploi</a>
+                                <a class="nav-link pl-0" href="<?php echo site_url( '/emploi' ); ?>">Offres d'emploi</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link pl-0" href="<?php echo site_url( '/contact' ); ?>">Contact</a>
@@ -69,12 +69,37 @@
 
                 <hr>
                 <div class="d-flex justify-content-between mt-4">
-                    <p>© 2019 Cabinet GESMA. Tous droits réservés.</p>
-                    <p><a href="<?php echo site_url( '/politique-de-confidentialite' ); ?>">Politique de confidentialité.</a></p>
+                    <p>
+                        © 2019 Cabinet GESMA. Tous droits réservés.
+                        <a href="<?php echo site_url( '/politique-de-confidentialite' ); ?>">Politique de confidentialité.</a>
+                    </p>
+                    <p></p>
                 </div>
             </div>
         </footer>
 
+        <a href="#page-top" id="scroll-top" title="Aller en haut">
+			<li class="fas fa-chevron-up"></li>
+		</a>
+
+        <script type='text/javascript' src='<?php echo get_template_directory_uri() . '/vendor/jquery-3.4.1.min.js' ?>'></script>
+
         <?php wp_footer(); ?>
+
+        <script type="text/javascript">
+            AOS.init({
+                once: true,
+            });
+
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 180) {
+                        $("#scroll-top").fadeIn('slow');
+                    } else {
+                        $("#scroll-top").fadeOut('slow');
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

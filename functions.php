@@ -26,7 +26,7 @@ function theme_scripts() {
 function theme_setup() {
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
-    add_theme_support( 'html5', array( 'comment-list', 'comment-form' ) );
+    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form' ) );
 }
 
 function custom_comment_date( $date, $d, $comment ) {
@@ -44,9 +44,56 @@ function theme_widgets() {
     );
 }
 
+function theme_custom_post_type() {
+    register_post_type('emploi',
+        array(
+            'rewrite' => array( 'slug' => 'emploi' ),
+            'labels' => array(
+                'name' => "Offres d'emploi",
+                'singular_name' => "Offre d'emploi",
+                'add_new_item' => "Ajouter une offre d'emploi",
+                'edit_item' => "Modifier l'offre d'emploi"
+            ),
+            'menu-icon' => 'dashboard-clipboard',
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title', 'thumbnail', 'editor'
+            )
+        )
+    );
+}
+
+function custom_comment_fields_order( $fields ) {
+    $comment_field = $fields['comment'];
+    $author_field = $fields['author'];
+    $email_field = $fields['email'];
+
+    unset( $fields['comment'] );
+    unset( $fields['author'] );
+    unset( $fields['email'] );
+
+    $fields['author'] = $author_field;
+    $fields['email'] = $email_field;
+    $fields['comment'] = $comment_field;
+
+    return $fields;
+}
+
+function filter_the_content( $content ) {
+    if ( !is_single() ) {
+        return mb_strimwidth($content, 0, 180, '...');
+    }
+
+    return $content;
+}
+
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 add_action( 'after_setup_theme', 'theme_setup' );
 add_action( 'widgets_init', 'theme_widgets' );
+add_action( 'init', 'theme_custom_post_type');
 add_filter( 'get_comment_date', 'custom_comment_date', 10, 3);
+add_filter( 'the_content', 'filter_the_content' );
+add_filter( 'comment_form_fields', 'custom_comment_fields_order' );
 
 require get_template_directory() . '/inc/functions.php';

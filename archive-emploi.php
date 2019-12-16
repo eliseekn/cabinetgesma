@@ -2,19 +2,17 @@
 
 <header class="text-center" id="header" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
     <div class="container">
-        <h1>Blog</h1>
+        <h1 class="mb-5">Offres d'emploi</h1>
+
+        <form action="<?php echo site_url( '/' ); ?>" action="get">
+            <input type="search" name="s" id="search" placeholder="Entrez votre recherche ici (ex: stage comptable)" required="required">
+            <input type="submit" value="Rechercher une offre" class="btn-link">
+            <input type="hidden" value="emploi" name="post_type" id="post_type">
+        </form>
     </div>
 </header>
 
-<?php
-// $args = array(
-//     'post_type' => 'post',
-//     'posts_per_page' => 2
-// );
-//
-// $posts = new WP_Query( $args );
-
-if( have_posts() ) { ?>
+<?php if( have_posts() ) { ?>
 
 <section id="section-blog">
     <div class="container">
@@ -26,12 +24,6 @@ if( have_posts() ) { ?>
             ?>
 
             <div class="col-6 my-5">
-                <?php
-                if ( has_post_thumbnail() ) {
-                    the_post_thumbnail( 'large', ['class' => 'img-fluid'] );
-                }
-                ?>
-
                 <h4><?php the_title(); ?></h4>
                 <p class="text-muted">Publié le <?php the_date(); ?></p>
                 <div class="text-justify mb-4">

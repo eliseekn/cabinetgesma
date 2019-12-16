@@ -6,15 +6,7 @@
     </div>
 </header>
 
-<?php
-// $args = array(
-//     'post_type' => 'post',
-//     'posts_per_page' => 2
-// );
-//
-// $posts = new WP_Query( $args );
-
-if( have_posts() ) { ?>
+<?php if( have_posts() ) { ?>
 
 <section id="section-blog">
     <div class="container">
@@ -32,7 +24,7 @@ if( have_posts() ) { ?>
                 }
                 ?>
 
-                <h4><?php the_title(); ?></h4>
+                <h4><?php echo the_title(); ?></h4>
                 <p class="text-muted">Publié le <?php the_date(); ?></p>
                 <div class="text-justify mb-4">
                     <?php the_content(); ?>

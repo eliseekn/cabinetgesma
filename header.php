@@ -10,7 +10,7 @@
 
         <title><?php bloginfo( 'name' ); ?></title>
     </head>
-    <body>
+    <body <?php body_class(); ?> id="page-top">
         <div class="container d-flex justify-content-between align-items-end py-4">
             <a href="<?php echo home_url( '/' ); ?>">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/logos/gesma.png'?>" class="img-fluid" alt="Logo Cabinet GESMA" title="Cabinet GESMA">
@@ -43,7 +43,7 @@
             </ul>
         </div>
 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="nav-menu">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -81,7 +81,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Offres d'emploi</a>
+                            <a class="nav-link <?php if (get_post_type() == 'emploi' ) { echo ' active'; } ?>" href="<?php echo site_url( '/emploi' ); ?>">Offres d'emploi</a>
                         </li>
 
                         <li class="nav-item">

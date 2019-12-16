@@ -1,8 +1,8 @@
 
 <section class="section-header mb-5">
     <div class="container text-center">
-        <h4>Avis Clients</h4>
-        <h2>Ce que nos clients disent de nous</h2>
+        <h4 data-aos="fade-left">Avis Clients</h4>
+        <h2 data-aos="fade-right" data-aos-offset="200">Ce que nos clients disent de nous</h2>
         <hr>
     </div>
 </section>

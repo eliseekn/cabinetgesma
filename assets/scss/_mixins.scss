@@ -6,3 +6,18 @@
     background-position: center;
     background-size: cover;
 }
+
+@mixin btn-link() {
+    text-decoration: none;
+    background-color: $darker-yellow;
+    padding: .8em 2em;
+    color: white !important;
+    border: none;
+    border-radius: 50px;
+
+    &:hover {
+        color: $yellow !important;
+        box-shadow: 0 0 5px $darker-yellow !important;
+        text-decoration: none;
+    }
+}

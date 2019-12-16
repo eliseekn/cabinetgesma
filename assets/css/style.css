@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   line-height: 1.8 !important;
 }
@@ -7,13 +11,13 @@ p {
   color: #944a00;
 }
 
-nav {
+#nav-menu {
   background-color: #805a0c;
 }
-nav a {
+#nav-menu a {
   color: white;
 }
-nav a:hover {
+#nav-menu a:hover {
   color: #fce522;
 }
 
@@ -59,6 +63,9 @@ nav a:hover {
   background-attachment: fixed;
   height: 670px;
 }
+#main-header .container {
+  z-index: 1;
+}
 #main-header h1 {
   margin-top: 2.3em;
   color: #fce522;
@@ -70,10 +77,11 @@ nav a:hover {
 #main-header img {
   position: absolute;
   margin-top: 21.3em;
+  z-index: 0;
 }
 #main-header a {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   top: 50px;
 }
 
@@ -377,13 +385,10 @@ footer hr {
   border: 1px solid black;
   border-radius: 18px;
   border-color: #944a00;
-  padding: 0.8em 1em;
+  padding: 0.8em 1em !important;
 }
 #section-contact input[type=text], #section-contact input[type=email] {
   border-radius: 50px !important;
-}
-#section-contact label {
-  margin-left: 0.5em;
 }
 #section-contact h4 {
   color: #fce522;
@@ -480,12 +485,25 @@ footer hr {
   color: #944a00;
 }
 #section-blog a {
-  color: white !important;
-  text-decoration: none !important;
+  color: white;
+  text-decoration: none;
 }
 #section-blog a:hover {
-  color: #ffeb6e !important;
-  text-decoration: none !important;
+  color: #ffeb6e;
+  text-decoration: none;
+}
+#section-blog .posts-pagination a {
+  text-decoration: none;
+  background-color: #944a00;
+  padding: 0.8em 2em;
+  color: white !important;
+  border: none;
+  border-radius: 50px;
+}
+#section-blog .posts-pagination a:hover {
+  color: #fce522 !important;
+  box-shadow: 0 0 5px #944a00 !important;
+  text-decoration: none;
 }
 #section-blog ul {
   line-height: 1.8;
@@ -526,6 +544,45 @@ footer hr {
 
 #mapid {
   height: 500px;
+}
+
+#scroll-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 11;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: #944a00;
+}
+#scroll-top:hover {
+  color: #fce522;
+  box-shadow: 0 0 5px #944a00 !important;
+}
+
+.nav-links .page-numbers {
+  color: #944a00 !important;
+}
+.nav-links .page-numbers:hover {
+  color: #944a00;
+}
+.nav-links .current {
+  color: black !important;
+}
+
+.search-form .input-group input {
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.search-form .input-group button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  padding: 0 1em !important;
 }
 
 /*# sourceMappingURL=style.css.map */

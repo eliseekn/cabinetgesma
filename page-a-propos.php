@@ -4,7 +4,7 @@
 
 <section id="section-presentation">
     <div class="container">
-        <img src="<?php echo get_template_directory_uri() . '/assets/img/team-all.jpg'?>" class="img-fluid float-right pl-4" alt="" width="550px">
+        <img src="<?php echo get_template_directory_uri() . '/assets/img/team-all.jpg'?>" class="img-fluid float-right pl-4" alt="" width="550px" data-aos="zoom-in" data-aos-offset="200">
 
         <div>
             <p class="text-justify">
@@ -65,8 +65,8 @@
 
 <section class="section-header">
     <div class="container text-center">
-        <h4>L'équipe</h4>
-        <h2>Découvrez notre formidable équipe</h2>
+        <h4 data-aos="fade-left">L'équipe</h4>
+        <h2 data-aos="fade-right" data-aos-offset="200">Découvrez notre formidable équipe</h2>
         <hr>
     </div>
 </section>
@@ -155,8 +155,8 @@
 
 <section class="section-header">
     <div class="container text-center">
-        <h4>Nos locaux</h4>
-        <h2>Passez nous rendre visite</h2>
+        <h4 data-aos="fade-left">Nos locaux</h4>
+        <h2 data-aos="fade-right" data-aos-offset="200">Passez nous rendre visite</h2>
         <hr>
     </div>
 </section>
@@ -205,7 +205,7 @@
     </div>
 
     <div class="text-center">
-        <a href="<?php echo site_url( '/gallerie-photos' ); ?>#locaux" class="btn-link">Voir plus de photos</a>
+        <a href="<?php echo site_url( '/gallerie-photos' ); ?>#locaux" class="btn-link" data-aos="zoom-in">Voir plus de photos</a>
     </div>
 </section>
 

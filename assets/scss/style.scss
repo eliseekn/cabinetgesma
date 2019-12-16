@@ -1,6 +1,10 @@
 @import "variables";
 @import "mixins";
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     line-height: 1.8 !important;
 }
@@ -12,7 +16,7 @@ p {
     }
 }
 
-nav {
+#nav-menu {
     background-color: $dark-yellow;
 
     a {
@@ -50,24 +54,17 @@ nav {
 }
 
 .btn-link {
-    text-decoration: none;
-    background-color: $darker-yellow;
-    padding: .8em 2em;
-    color: white !important;
-    border: none;
-    border-radius: 50px;
-
-    &:hover {
-        color: $yellow !important;
-        box-shadow: 0 0 5px $darker-yellow !important;
-        text-decoration: none;
-    }
+    @include btn-link();
 }
 
 #main-header {
     @include background-image("/assets/img/header-bg.jpg", $dark-yellow);
     background-attachment: fixed;
     height: 670px;
+
+    .container {
+        z-index: 1;
+    }
 
     h1 {
         margin-top: 2.3em;
@@ -82,11 +79,12 @@ nav {
     img {
         position: absolute;
         margin-top: 21.3em;
+        z-index: 0;
     }
 
     a {
         position: relative;
-        z-index: 1;
+        z-index: 2;
         top: 50px;
     }
 }
@@ -459,16 +457,16 @@ footer {
         border: 1px solid black;
         border-radius: 18px;
         border-color: $darker-yellow;
-        padding: .8em 1em;
+        padding: .8em 1em !important;
     }
 
     input[type=text], input[type=email] {
         border-radius: 50px !important;
     }
 
-    label {
-        margin-left: .5em;
-    }
+    // label {
+    //     margin-left: .5em;
+    // }
 
     h4 {
         color: $yellow;
@@ -587,12 +585,18 @@ footer {
     }
 
     a {
-        color: white !important;
-        text-decoration: none !important;
+        color: white;
+        text-decoration: none;
 
         &:hover {
-            color: $lighter-yellow !important;
-            text-decoration: none !important;
+            color: $lighter-yellow;
+            text-decoration: none;
+        }
+    }
+
+    .posts-pagination {
+        a {
+            @include btn-link();
         }
     }
 
@@ -646,4 +650,53 @@ footer {
 
 #mapid {
     height: 500px;
+}
+
+#scroll-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 11;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: $darker-yellow;
+
+    &:hover {
+        color: $yellow;
+        box-shadow: 0 0 5px $darker-yellow !important;
+    }
+}
+
+.nav-links {
+    .page-numbers {
+        color: $darker-yellow !important;
+
+        &:hover {
+            color: $darker-yellow;
+        }
+    }
+
+    .current {
+        color: black !important;
+    }
+}
+
+.search-form {
+    .input-group {
+        input {
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+
+        button {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            padding: 0 1em !important
+        }
+    }
 }
