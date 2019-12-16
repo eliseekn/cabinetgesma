@@ -88,6 +88,25 @@ function filter_the_content( $content ) {
     return $content;
 }
 
+function send_mail( $args = array() ) {
+    if ( !is_array( $args ) ) {
+        return false;
+    }
+
+    if ( !isset( $args['subject'] ) || !isset( $args['message'] )
+        || !isset( $args['headers'] ) ) {
+        return false;
+    }
+
+    $to = get_option( 'tz_email' );
+
+    if ( isset( $args['attachment'] ) ) {
+        return wp_mail( $to, $args['subject'], $args['message'], $args['headers'], $args['attachment'] );
+    } else {
+        return wp_mail( $to, $args['subject'], $args['message'], $args['headers'] );
+    }
+}
+
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 add_action( 'after_setup_theme', 'theme_setup' );
 add_action( 'widgets_init', 'theme_widgets' );

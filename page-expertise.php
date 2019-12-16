@@ -5,7 +5,7 @@
 <section class="intro">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-lg-6 col-sm-6" data-aos="fade-right">
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magnam cum a tenetur quia, beatae nam quae repellendus ipsum,
@@ -26,7 +26,7 @@
                 </p>
             </div>
 
-            <div class="col">
+            <div class="col-lg-6 col-sm-6" data-aos="fade-left" data-aos-offset="200">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/graduate.jpeg';?>" class="img-fluid" alt="">
             </div>
         </div>
@@ -35,8 +35,8 @@
 
 <section class="section-header" id="gestion">
     <div class="container text-center">
-        <h2 class="font-weight-bold _title">Gestion</h2>
-        <p class="lead">
+        <h2 class="font-weight-bold _title" data-aos="fade-left">Gestion</h2>
+        <p class="lead" data-aos="fade-right" data-aos-offset="200">
             Duis aute irure dolor in reprehenderit in voluptate velit
             esse cillum dolore eu fugiat nulla pariatur. Excepteur
             sint occaecat cupidatat non proident, sunt in culpa qui
@@ -104,8 +104,8 @@
 
 <section class="section-header" id="marketing">
     <div class="container text-center">
-        <h2 class="font-weight-bold _title">Marketing</h2>
-        <p class="lead">
+        <h2 class="font-weight-bold _title" data-aos="fade-left">Marketing</h2>
+        <p class="lead" data-aos="fade-right" data-aos-offset="200">
             Duis aute irure dolor in reprehenderit in voluptate velit
             esse cillum dolore eu fugiat nulla pariatur. Excepteur
             sint occaecat cupidatat non proident, sunt in culpa qui
@@ -173,8 +173,8 @@
 
 <section class="section-header" id="management">
     <div class="container text-center">
-        <h2 class="font-weight-bold _title">Management</h2>
-        <p class="lead">
+        <h2 class="font-weight-bold _title" data-aos="fade-left">Management</h2>
+        <p class="lead" data-aos="fade-right" data-aos-offset="200">
             Duis aute irure dolor in reprehenderit in voluptate velit
             esse cillum dolore eu fugiat nulla pariatur. Excepteur
             sint occaecat cupidatat non proident, sunt in culpa qui
@@ -243,7 +243,7 @@
 <section class="intro">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-lg-6 col-sm-6" data-aos="fade-right">
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magnam cum a tenetur quia, beatae nam quae repellendus ipsum,
@@ -264,7 +264,7 @@
                 </p>
             </div>
 
-            <div class="col">
+            <div class="col-lg-6 col-sm-6" data-aos="fade-left" data-aos-offset="200">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/graduate.jpeg';?>" class="img-fluid" alt="">
             </div>
         </div>

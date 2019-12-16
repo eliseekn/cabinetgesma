@@ -1,4 +1,3 @@
-
 <section class="section-header mb-5">
     <div class="container text-center">
         <h4 data-aos="fade-left">Avis Clients</h4>
@@ -10,7 +9,7 @@
 <section id="section-testimonials" class="mb-5">
     <div class="container">
         <div class="row">
-            <div class="col text-center">
+            <div class="col-lg-4 text-center">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/testimonials/avatar.png'; ?>" alt="Avatar" class="img-fluid">
                 <li class="fas fa-quote-left"></li>
                 <p>
@@ -21,7 +20,7 @@
                 <p class="_text-muted">Lorem ipsum</p>
             </div>
 
-            <div class="col text-center">
+            <div class="col-lg-4 text-center">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/testimonials/avatar.png'; ?>" alt="Avatar" class="img-fluid">
                 <li class="fas fa-quote-left"></li>
                 <p>
@@ -32,7 +31,7 @@
                 <p class="_text-muted">Lorem ipsum</p>
             </div>
 
-            <div class="col text-center">
+            <div class="col-lg-4 text-center">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/testimonials/avatar.png'; ?>" alt="Avatar" class="img-fluid">
                 <li class="fas fa-quote-left"></li>
                 <p>

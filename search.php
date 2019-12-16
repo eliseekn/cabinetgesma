@@ -2,7 +2,7 @@
 
 <header class="text-center" id="header" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
     <div class="container">
-        <h1>Résultats de la recherche pour "<?php echo get_search_query() ?>"</h1>
+        <h1 data-aos="fade-left">Résultats de la recherche pour "<?php echo get_search_query() ?>"</h1>
     </div>
 </header>
 
@@ -17,7 +17,7 @@
                 the_post();
             ?>
 
-            <div class="col-6 my-5">
+            <div class="col-lg-6 col-sm-6 my-5">
                 <?php
                 if ( has_post_thumbnail() ) {
                     the_post_thumbnail( 'large', ['class' => 'img-fluid'] );

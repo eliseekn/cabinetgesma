@@ -1,9 +1,9 @@
 <?php
 if (isset($_POST['submitted'])) {
-    $contact_name = $_POST['contact-name'];
-    $contact_email = $_POST['contact-email'];
-    $contact_cv = $_POST['contact-cv'];
-    $job_title = $_POST['job-title'];
+    // $contact_name = $_POST['contact-name'];
+    // $contact_email = $_POST['contact-email'];
+    // $contact_cv = $_POST['contact-cv'];
+    // $job_title = $_POST['job-title'];
 
     $allowed = array( 'doc', 'docx', 'pdf' );
     $ext = pathinfo( $_FILES['contact-cv']['name'], PATHINFO_EXTENSION );
@@ -14,13 +14,25 @@ if (isset($_POST['submitted'])) {
         $attachement = WP_CONTENT_DIR . '/uploads/' . basename( $_FILES['contact-cv']['name'] );
     	move_uploaded_file( $_FILES['contact-cv']['tmp_name'], $attachement );
 
-        $to = get_option( 'tz_email' );
-        $subject = "Candidature pour l'offre d'emploi: " . $job_title;
-        $message = "Candidature de " . $contact_name . " (" . $contact_phone . ")";
-        $headers[] = 'From: Cabinet GESMA <noreply@cabinetgesma.com>';
-        $headers[] = 'Reply-To: ' . $contact_email;
+        // $to = get_option( 'tz_email' );
+        // $subject = "Candidature pour l'offre d'emploi: " . $job_title;
+        // $message = "Candidature de " . $contact_name . " (" . $contact_phone . ")";
+        // $headers[] = 'From: Cabinet GESMA <noreply@cabinetgesma.com>';
+        // $headers[] = 'Reply-To: ' . $contact_email;
+        //
+        // $email_sent = wp_mail( $to, $subject, $message, $headers, $attachement );
 
-        $email_sent = wp_mail( $to, $subject, $message, $headers, $attachement );
+        $args = array(
+            'subject' => "Candidature pour l'offre d'emploi: " . $_POST['job-title'],
+            'message' => "Candidature de " . $_POST['contact-name'],
+            'headers' => array(
+                'From: Cabinet GESMA <noreply@cabinetgesma.com>',
+                'Reply-To: ' . $_POST['contact-email']
+            ),
+            'attachment' => $attachement
+        );
+
+        $email_sent = send_mail( $args );
     }
 }
 ?>
@@ -29,7 +41,7 @@ if (isset($_POST['submitted'])) {
 
 <header class="text-center" id="header" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
     <div class="container">
-        <h1>Offre d'emploi</h1>
+        <h1 data-aos="fade-left">Offre d'emploi</h1>
     </div>
 </header>
 
@@ -42,7 +54,7 @@ if (isset($_POST['submitted'])) {
 
         <p class="lead mb-4">
             Merci, votre candidature a bien été envoyée! <br>
-            Nous vous recontactrons dans les plus brefs délais.
+            Nous vous recontacterons dans les plus brefs délais.
         </p>
 
         <a href="<?php echo home_url( '/' ); ?>" class="btn-link">Retourner à l'accueil</a>
@@ -50,8 +62,8 @@ if (isset($_POST['submitted'])) {
         <?php } else { ?>
 
         <p class="lead mb-4">
-            Le format de CV est invalid! <br>
-            Ne sont autorisés que les documents Microsoft Word (doc, docx) et PDF.
+            Le format de CV est invalide! <br>
+            Seuls les documents aux formats Microsoft Word (doc, docx) et PDF sont autorisés.
         </p>
 
         <?php } ?>
@@ -120,7 +132,7 @@ if (isset($_POST['submitted'])) {
             }
             ?>
 
-            <div class="col-lg-4 px-5 mt-5">
+            <div class="col-lg-4 px-lg-5 mt-5">
                 <div class="">
                     <h4 class="mb-3">Rechercher une offre</h4>
 

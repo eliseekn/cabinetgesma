@@ -2,11 +2,12 @@
 
 <header class="d-flex flex-column justify-content-start" id="main-header"
     style="<?php echo set_background( get_template_directory_uri() . '/assets/img/header-bg.jpg'); ?>; background-attachment: fixed">
-    <div class="container"  data-aos="zoom-in">
+    <div class="container" data-aos="zoom-in">
         <h1 class="display-3"> Cabinet GESMA</h1>
         <p>Une expertise à l'échelle des PME locales depuis 1998.</p>
+
         <a href="<?php echo site_url( '/a-propos' ); ?>" class="btn-link">En savoir plus</a>
-        <a href="<?php echo site_url( '/contact' ); ?>" class="btn-link ml-4">Contactez-nous</a>
+        <a href="<?php echo site_url( '/contact' ); ?>" class="btn-link ml-lg-4 ml-md-4 ml-xl-4">Contactez-nous</a>
     </div>
 
     <img src="<?php echo get_template_directory_uri() . '/assets/img/logos/vague.png'; ?>" class="img-fluid" alt="Vague Cabinet GESMA" data-aos="fade-left" data-aos-offset="200">
@@ -38,21 +39,21 @@
             <div class="col" data-aos="fade-left" data-aos-offset="200">
                 <h3 class="mb-4">Nos prestations</h3>
                 <p class="text-justify">
-                    <p>
+                    <p class="text-justify">
                         <li class="far fa-plus-square"></li>
                         <span>Assitance</span> <br>
                         Consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                     </p>
 
-                    <p>
+                    <p class="text-justify">
                         <li class="far fa-plus-square"></li>
                         <span>Conseil</span> <br>
                         Consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                     </p>
 
-                    <p>
+                    <p class="text-justify">
                         <li class="far fa-plus-square"></li>
                         <span>Formations</span> <br>
                         Consectetur adipisicing elit, sed do eiusmod tempor
@@ -67,13 +68,13 @@
 <section id="section-word" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
     <div class="container">
         <div class="d-flex justify-content-around align-items-center">
-            <div class="d-flex flex-column align-items-center" data-aos="fade-right">
+            <div class="d-flex flex-column align-items-center" data-aos="fade-right" id="avatar">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/director.png'?>" alt="Photo Directeur" class="img-fluid">
                 <h5 class="mt-2 font-weight-bold">Lowell Blé D.</h5>
                 <p class="_text-muted">Directeur</p>
             </div>
 
-            <li class="fas fa-quote-left ml-5" data-aos="zoom-in" data-aos-offset="200"></li>
+            <li class="fas fa-quote-left ml-lg-5 ml-md-5 ml-xl-5" data-aos="zoom-in" data-aos-offset="200"></li>
 
             <div data-aos="zoom-in" data-aos-offset="200">
                 <p class="text-justify">
@@ -107,7 +108,7 @@
             <div class="col d-flex align-items-center" data-aos="fade-left">
                 <li class="fas fa-seedling"></li>
 
-                <div class="mt-3">
+                <div class="mt-3 expertise-infos">
                     <a href="">
                         <h4>Création d'Entreprise et Entrepreneuriat</h4>
                     </a>
@@ -121,7 +122,7 @@
             <div class="col d-flex align-items-center" data-aos="fade-left" data-aos-offset="200">
                 <li class="fas fa-cash-register"></li>
 
-                <div class="mt-3">
+                <div class="mt-3 expertise-infos">
                     <a href="">
                         <h4>Assistance Comptable et Fiscale</h4>
                     </a>
@@ -137,7 +138,7 @@
             <div class="col d-flex align-items-center" data-aos="fade-left" data-aos-offset="300">
                 <li class="fas fa-hand-holding-usd"></li>
 
-                <div class="mt-3">
+                <div class="mt-3 expertise-infos">
                     <a href="">
                         <h4>Assistance et Conseil en Gestion d'Entreprise</h4>
                     </a>
@@ -151,7 +152,7 @@
             <div class="col d-flex align-items-center" data-aos="fade-left" data-aos-offset="400">
                 <li class="fas fa-chart-line"></li>
 
-                <div class="mt-3">
+                <div class="mt-3 expertise-infos">
                     <a href="">
                         <h4>Conseil en Stratégie Marketing et Communication</h4>
                     </a>
@@ -167,8 +168,8 @@
 
 <section id="section-contact-now" class="mt-5" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
     <div class="container d-flex align-items-start justify-content-center">
-        <p class="mt-1" data-aos="fade-left">Besoin de notre expertise ou de plus d'informations?</p>
-        <a href="contact.html" class="btn-link ml-4" data-aos="zoom-in" data-aos-offset="200">Contactez-nous</a>
+        <p class="mt-md-1 mt-lg-1 mt-xl-1" data-aos="fade-left">Besoin de notre expertise ou de plus d'informations?</p>
+        <a href="contact.html" class="btn-link ml-md-4 ml-lg-4 ml-xl-4" data-aos="zoom-in" data-aos-offset="200">Contactez-nous</a>
     </div>
 </section>
 
@@ -238,7 +239,7 @@
                 $posts->the_post();
             ?>
 
-            <div class="col">
+            <div class="col-lg-6">
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     			<p class="_text-muted">Publié le <?php the_date(); ?></p>
     			<div class="text-justify"><?php the_content(); ?></div>

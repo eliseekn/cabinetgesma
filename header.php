@@ -11,7 +11,7 @@
         <title><?php bloginfo( 'name' ); ?></title>
     </head>
     <body <?php body_class(); ?> id="page-top">
-        <div class="container d-flex justify-content-between align-items-end py-4">
+        <div class="container d-flex justify-content-between align-items-end py-4" id="infos-header-block">
             <a href="<?php echo home_url( '/' ); ?>">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/logos/gesma.png'?>" class="img-fluid" alt="Logo Cabinet GESMA" title="Cabinet GESMA">
             </a>
@@ -43,10 +43,10 @@
             </ul>
         </div>
 
-        <nav class="navbar navbar-expand-lg" id="nav-menu">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="nav-menu">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span> Menu
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">

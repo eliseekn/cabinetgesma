@@ -1,18 +1,29 @@
 <?php
 if (isset($_POST['submitted'])) {
-    $contact_name = $_POST['contact-name'];
-    $contact_email = $_POST['contact-email'];
-    $contact_phone = $_POST['contact-phone'];
-    $contact_subject = $_POST['contact-subject'];
-    $contact_message = $_POST['contact-message'];
+    // $contact_name = $_POST['contact-name'];
+    // $contact_email = $_POST['contact-email'];
+    // $contact_phone = $_POST['contact-phone'];
+    // $contact_subject = $_POST['contact-subject'];
+    // $contact_message = $_POST['contact-message'];
+    //
+    // $to = get_option( 'tz_email' );
+    // $subject = $_POST['contact-subject'];
+    // $message = ;
+    // $headers[] = 'From: Cabinet GESMA <noreply@cabinetgesma.com>';
+    // $headers[] = 'Reply-To: ' . $contact_email;
+    //
+    // $email_sent = wp_mail($to, $subject, $message, $headers);
 
-    $to = get_option( 'tz_email' );
-    $subject = $contact_subject;
-    $message = "Message de " . $contact_name . " (" . $contact_phone . ")\r\n" . $contact_message;
-    $headers[] = 'From: Cabinet GESMA <noreply@cabinetgesma.com>';
-    $headers[] = 'Reply-To: ' . $contact_email;
+    $args = array(
+        'subject' => $_POST['contact-subject'],
+        'message' => "Message de " . $_POST['contact-name'] . " (" . $_POST['contact-phone'] . ")\r\n" . $_POST['contact-message'],
+        'headers' => array(
+            'From: Cabinet GESMA <noreply@cabinetgesma.com>',
+            'Reply-To: ' . $_POST['contact-email']
+        ),
+    );
 
-    $email_sent = wp_mail($to, $subject, $message, $headers);
+    $email_sent = send_mail( $args );
 }
 ?>
 
@@ -37,8 +48,8 @@ if (isset($_POST['submitted'])) {
 
 <section class="section-header">
     <div class="container text-center">
-        <h4>Localisation</h4>
-        <h2>Où sommes-nous situés?</h2>
+        <h4 data-aos="fade-left">Localisation</h4>
+        <h2 data-aos="fade-right" data-aos-offset="200">Où sommes-nous situés?</h2>
         <hr>
     </div>
 </section>
@@ -51,8 +62,8 @@ if (isset($_POST['submitted'])) {
 
 <section class="section-header">
     <div class="container text-center">
-        <h4>Plus d'informations?</h4>
-        <h2>Remplissez le formulaire ci-dessous</h2>
+        <h4 data-aos="fade-left">Plus d'informations?</h4>
+        <h2 data-aos="fade-right" data-aos-offset="200">Remplissez le formulaire ci-dessous</h2>
         <hr>
     </div>
 </section>
@@ -94,7 +105,7 @@ if (isset($_POST['submitted'])) {
                 </form>
             </div>
 
-            <div class="col-4 ml-4">
+            <div class="col-lg-4 col-sm-6 ml-lg-4" data-aos="zoom-in">
                 <h4>Coordonnées</h4>
                 <hr>
                 <p class="mt-4">

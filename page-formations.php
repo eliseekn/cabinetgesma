@@ -4,8 +4,8 @@
 
 <section class="section-header" id="certifications">
     <div class="container text-center">
-        <h4>Certifications Professionnelles</h4>
-        <h2>Domaines de formations certifiantes</h2>
+        <h4 data-aos="fade-left">Certifications Professionnelles</h4>
+        <h2 data-aos="fade-right" data-aos-offset="200">Domaines de formations certifiantes</h2>
         <hr>
     </div>
 </section>
@@ -13,7 +13,7 @@
 <section class="section-formations" id="section-certifications">
     <div class="container">
         <div class="row">
-            <div class="col d-flex flex-column text-center">
+            <div class="col d-flex flex-column text-center" data-aos="zoom-in">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/formations/assistant-comptable.jpg'?>" class="img-fluid" alt="">
 
                 <div class="desc">
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="col d-flex flex-column text-center">
+            <div class="col d-flex flex-column text-center" data-aos="zoom-in" data-aos-offset="200">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/formations/secretariat-direction.jpg'?>" class="img-fluid" alt="">
                 <div class="desc">
                     <h4>Secrétariat de Direction</h4>
@@ -39,7 +39,7 @@
                 </div>
             </div>
 
-            <div class="col d-flex flex-column text-center">
+            <div class="col d-flex flex-column text-center" data-aos="zoom-in" data-aos-offset="200">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/formations/ressources-humaines.jpg'?>" class="img-fluid" alt="">
                 <div class="desc">
                     <h4>Gestionnaire de Personnel</h4>
@@ -57,7 +57,7 @@
 
 <section class="section-header">
     <div class="container text-center">
-        <h2>Ils ont bénéficié de nos formations</h2>
+        <h2 data-aos="fade-right">Ils ont bénéficié de nos formations</h2>
         <hr>
     </div>
 </section>
@@ -65,7 +65,7 @@
 <section id="section-team">
     <div class="container">
         <div class="row">
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 team-card mb-5">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490143.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lowell Blé D.</h5>
@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 team-card mb-5">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490150.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 team-card mb-5">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490152.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -91,15 +91,15 @@
         </div>
     </div>
 
-    <div class="text-center">
+    <div class="text-center" data-aos="zoom-in">
         <a href="<?php echo site_url( '/gallerie-photos' ); ?>#formations" class="btn-link">Voir plus de photos</a>
     </div>
 </section>
 
 <section class="section-header" id="fdfp">
     <div class="container text-center">
-        <h4>Formations FDFP</h4>
-        <h2>Domaines d'habilitations agréés</h2>
+        <h4 data-aos="fade-left">Formations FDFP</h4>
+        <h2 data-aos="fade-right" data-aos-offset="200">Domaines d'habilitations agréés</h2>
         <hr>
     </div>
 </section>
@@ -158,7 +158,7 @@
 
 <section class="section-header">
     <div class="container text-center">
-        <h2>Ils nous font confiance</h2>
+        <h2 data-aos="fade-right">Ils nous font confiance</h2>
         <hr>
     </div>
 </section>

@@ -74,7 +74,7 @@
 <section id="section-team">
     <div class="container">
         <div class="row">
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490143.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lowell Blé D.</h5>
@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490150.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -90,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490152.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -100,7 +100,7 @@
         </div>
 
         <div class="row">
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490154.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -108,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490150.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490152.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -126,7 +126,7 @@
         </div>
 
         <div class="row">
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490154.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -134,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490150.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -142,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="col mb-5">
+            <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490152.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
                     <h5 class="mt-2 font-weight-bold">Lorem Ipsum</h5>
@@ -164,47 +164,47 @@
 <section id="section-locaux" class="mb-5">
     <div class="container">
         <div class="row mb-5">
-            <div class="col">
+            <div class="col-lg-6 col-sm-6">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/locaux/P1490118.jpg'?>" class="img-fluid" alt="">
             </div>
 
-            <div class="col">
+            <div class="col-lg-6 col-sm-6">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/locaux/P1490108.jpg'?>" class="img-fluid" alt="">
             </div>
         </div>
 
         <div class="row mb-5">
-            <div class="col">
+            <div class="col-lg-6 col-sm-6">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/locaux/P1490085.jpg'?>" class="img-fluid" alt="">
             </div>
 
-            <div class="col">
+            <div class="col-lg-6 col-sm-6">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/locaux/P1490061.jpg'?>" class="img-fluid" alt="">
             </div>
         </div>
 
         <div class="row mb-5">
-            <div class="col">
+            <div class="col-lg-6 col-sm-6">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/locaux/P1490091.jpg'?>" class="img-fluid" alt="">
             </div>
 
-            <div class="col">
+            <div class="col-lg-6 col-sm-6">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/locaux/P1490045.jpg'?>" class="img-fluid" alt="">
             </div>
         </div>
 
         <div class="row mb-5">
-            <div class="col">
+            <div class="col-lg-6 col-sm-6">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/locaux/P1490101.jpg'?>" class="img-fluid" alt="">
             </div>
 
-            <div class="col">
+            <div class="col-lg-6 col-sm-6">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/locaux/P1490066.jpg'?>" class="img-fluid" alt="">
             </div>
         </div>
     </div>
 
-    <div class="text-center">
+    <div class="text-center see-more">
         <a href="<?php echo site_url( '/gallerie-photos' ); ?>#locaux" class="btn-link" data-aos="zoom-in">Voir plus de photos</a>
     </div>
 </section>

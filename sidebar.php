@@ -1,4 +1,4 @@
-<div class="col-lg-4 px-5">
+<div class="col-lg-4 px-lg-5">
     <div class="">
         <h4 class="mb-3">Rechercher un article</h4>
         <?php get_search_form(); ?>

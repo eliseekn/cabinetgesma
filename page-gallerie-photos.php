@@ -19,7 +19,7 @@
 
 <section class="section-header">
     <div class="container text-center">
-        <h2>Formations</h2>
+        <h2 data-aos="fade-right">Formations</h2>
         <hr>
     </div>
 </section>
@@ -32,7 +32,7 @@
 
 <section class="section-header">
     <div class="container text-center">
-        <h2>Locaux</h2>
+        <h2 data-aos="fade-right">Locaux</h2>
         <hr>
     </div>
 </section>
