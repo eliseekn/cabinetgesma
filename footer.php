@@ -29,6 +29,9 @@
                                 <a class="nav-link pl-0" href="<?php echo site_url( '/formations' ); ?>">Formations</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link pl-0" href="<?php echo site_url( '/actualite' ); ?>">Actualité</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link pl-0" href="<?php echo site_url( '/emploi' ); ?>">Offres d'emploi</a>
                             </li>
                             <li class="nav-item">

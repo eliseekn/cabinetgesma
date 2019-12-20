@@ -8,7 +8,7 @@
 
 <section id="section-testimonials" class="mb-5">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-4 text-center">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/testimonials/avatar.png'; ?>" alt="Avatar" class="img-fluid">
                 <li class="fas fa-quote-left"></li>
@@ -31,7 +31,7 @@
                 <p class="_text-muted">Lorem ipsum</p>
             </div>
 
-            <div class="col-lg-4 text-center">
+            <!-- <div class="col-lg-4 text-center">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/testimonials/avatar.png'; ?>" alt="Avatar" class="img-fluid">
                 <li class="fas fa-quote-left"></li>
                 <p>
@@ -40,7 +40,7 @@
                 </p>
                 <h5>Lorem ipsum</h5>
                 <p class="_text-muted">Lorem ipsum</p>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

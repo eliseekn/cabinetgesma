@@ -81,11 +81,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link <?php if (get_post_type() == 'emploi' ) { echo ' active'; } ?>" href="<?php echo site_url( '/emploi' ); ?>">Offres d'emploi</a>
+                            <a class="nav-link <?php if ( get_post_type() == 'post' ) { echo ' active'; } ?>" href="<?php echo site_url( '/actualite' ); ?>">Actualité</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link <?php if (is_page( 'contact' )) { echo ' active'; } ?>" href="<?php echo site_url( '/contact' ); ?>">Contact</a>
+                            <a class="nav-link <?php if ( get_post_type() == 'emploi' ) { echo ' active'; } ?>" href="<?php echo site_url( '/emploi' ); ?>">Offres d'emploi</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link <?php if ( is_page( 'contact' ) ) { echo ' active'; } ?>" href="<?php echo site_url( '/contact' ); ?>">Contact</a>
                         </li>
                     </ul>
 

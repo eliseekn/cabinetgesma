@@ -38,28 +38,28 @@
 
             <div class="col" data-aos="fade-left" data-aos-offset="200">
                 <h3 class="mb-4">Nos prestations</h3>
-                <p class="text-justify">
-                    <p class="text-justify">
+                <div class="text-justify">
+                    <p>
                         <li class="far fa-plus-square"></li>
                         <span>Assitance</span> <br>
                         Consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                     </p>
 
-                    <p class="text-justify">
+                    <p>
                         <li class="far fa-plus-square"></li>
                         <span>Conseil</span> <br>
                         Consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                     </p>
 
-                    <p class="text-justify">
+                    <p>
                         <li class="far fa-plus-square"></li>
                         <span>Formations</span> <br>
                         Consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                     </p>
-                </p>
+                </div>
             </div>
         </div>
     </div>
@@ -239,7 +239,7 @@
                 $posts->the_post();
             ?>
 
-            <div class="col-lg-6">
+            <div class="col">
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     			<p class="_text-muted">Publié le <?php the_date(); ?></p>
     			<div class="text-justify"><?php the_content(); ?></div>

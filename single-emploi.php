@@ -116,7 +116,7 @@ if (isset($_POST['submitted'])) {
                         </div>
 
                         <div class="d-flex flex-column mb-4">
-                            <label for="">CV (Obligatoire)</label>
+                            <label for="">Curiculum Vitae (Obligatoire)</label>
                             <input type="file" name="contact-cv" class="form-control-file" required="required">
                         </div>
 
@@ -150,7 +150,7 @@ if (isset($_POST['submitted'])) {
                 </div>
 
                 <div class="posts">
-                    <h4>Dernières offres</h4>
+                    <h4>Offres récentes</h4>
                     <hr>
                     <ul class="list-group mt-3" style="list-style-type: none">
 
