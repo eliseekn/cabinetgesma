@@ -98,13 +98,28 @@ function send_mail( $args = array() ) {
         return false;
     }
 
-    $to = get_option( 'tz_email' );
-
+    $to = get_option( 'admin_email' );
+    
     if ( isset( $args['attachment'] ) ) {
+		$allowed_ext = array( "doc", "docx", "pdf" );
+		$file_ext = pathinfo( $_FILES['contact-cv']['name'], PATHINFO_EXTENSION );
+		
+		if ( !in_array( $file_ext, $allowed_ext ) ) {
+			return false;
+		}
+		
+		$args['attachment'] = WP_CONTENT_DIR . '/uploads/' . basename( $_FILES['contact-cv']['name'] );
+    	move_uploaded_file( $_FILES['contact-cv']['tmp_name'], $args['attachment'] );
+        
         return wp_mail( $to, $args['subject'], $args['message'], $args['headers'], $args['attachment'] );
     } else {
         return wp_mail( $to, $args['subject'], $args['message'], $args['headers'] );
     }
+}
+
+function set_background($url) {
+    return "background: linear-gradient(to right, rgba(128, 90, 12, 0.8), rgba(128, 90, 12, 0.8)),
+        url(" . $url . ") no-repeat; background-size: cover; background-position: center";
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
@@ -114,5 +129,3 @@ add_action( 'init', 'theme_custom_post_type');
 add_filter( 'get_comment_date', 'custom_comment_date', 10, 3);
 add_filter( 'the_content', 'filter_the_content' );
 add_filter( 'comment_form_fields', 'custom_comment_fields_order' );
-
-require get_template_directory() . '/inc/functions.php';

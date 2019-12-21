@@ -1,23 +1,10 @@
 <?php
-if (isset($_POST['submitted'])) {
-    // $contact_name = $_POST['contact-name'];
-    // $contact_email = $_POST['contact-email'];
-    // $contact_phone = $_POST['contact-phone'];
-    // $contact_subject = $_POST['contact-subject'];
-    // $contact_message = $_POST['contact-message'];
-    //
-    // $to = get_option( 'tz_email' );
-    // $subject = $_POST['contact-subject'];
-    // $message = ;
-    // $headers[] = 'From: Cabinet GESMA <noreply@cabinetgesma.com>';
-    // $headers[] = 'Reply-To: ' . $contact_email;
-    //
-    // $email_sent = wp_mail($to, $subject, $message, $headers);
-
+if ( isset($_POST['submitted'] ) ) {
     $args = array(
         'subject' => $_POST['contact-subject'],
         'message' => "Message de " . $_POST['contact-name'] . " (" . $_POST['contact-phone'] . ")\r\n" . $_POST['contact-message'],
         'headers' => array(
+			'to: <' . get_option( 'admin_email' ) . '>',
             'From: Cabinet GESMA <noreply@cabinetgesma.com>',
             'Reply-To: ' . $_POST['contact-email']
         ),
@@ -31,7 +18,7 @@ if (isset($_POST['submitted'])) {
 
 <?php include_once( get_template_directory() . '/templates/page-header.php' ); ?>
 
-<?php if (isset($email_sent)) { ?>
+<?php if ( isset( $email_sent ) ) { ?>
 
 <section class="section-header">
     <div class="container text-center">

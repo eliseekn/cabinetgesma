@@ -471,7 +471,7 @@ p {
   border-radius: 50%;
   position: absolute;
   top: -80px;
-  left: 110px;
+  left: 125px;
 }
 @media (max-width: 320px) {
   #section-testimonials img {
