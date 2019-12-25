@@ -28,19 +28,19 @@ if ( isset($_POST['submitted'] ) ) {
 <section class="section-header">
     <div class="container text-center">
         <p class="lead mb-4">
-        
+
 			<?php if ( $email_sent == true ) { ?>
-			
+
 			Merci, votre candidature a bien été envoyée! <br>
             Nous vous recontacterons dans les plus brefs délais.
-            
+
 			<?php } else { ?>
-        
+
             Le format de CV est invalide! <br>
             Seuls les documents aux formats Microsoft Word (doc, docx) et PDF sont autorisés.
-            
+
             <?php } ?>
-            
+
         </p>
 
         <a href="<?php echo home_url( '/' ); ?>" class="btn-link">Retourner à l'accueil</a>
@@ -73,10 +73,10 @@ if ( isset($_POST['submitted'] ) ) {
                     <?php the_content(); ?>
                 </div>
 
-                <!-- <div class="d-flex justify-content-between align-items-center mt-5 posts-pagination">
-                    <?php previous_post_link('%link', 'Offre précédente', true); ?>
-                    <?php next_post_link('%link', 'Offre suivante', true); ?>
-                </div> -->
+                <div class="d-flex justify-content-between align-items-center mt-5 posts-pagination">
+                    <?php previous_post_link('%link', 'Offre précédente'); ?>
+                    <?php next_post_link('%link', 'Offre suivante'); ?>
+                </div>
 
                 <div id="section-contact">
                     <h4 class="mt-5 mb-4">Postuler à l'offre</h4>

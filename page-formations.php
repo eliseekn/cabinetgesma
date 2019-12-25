@@ -13,7 +13,7 @@
 <section class="section-formations" id="section-certifications">
     <div class="container">
         <div class="row">
-            <div class="col d-flex flex-column text-center" data-aos="zoom-in">
+            <div class="col-lg-4 d-flex flex-column text-center" data-aos="zoom-in">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/formations/assistant-comptable.jpg'?>" class="img-fluid" alt="">
 
                 <div class="desc">
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="col d-flex flex-column text-center" data-aos="zoom-in" data-aos-offset="200">
+            <div class="col-lg-4 d-flex flex-column text-center" data-aos="zoom-in" data-aos-offset="200">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/formations/secretariat-direction.jpg'?>" class="img-fluid" alt="">
                 <div class="desc">
                     <h4>Secrétariat de Direction</h4>
@@ -39,7 +39,7 @@
                 </div>
             </div>
 
-            <div class="col d-flex flex-column text-center" data-aos="zoom-in" data-aos-offset="200">
+            <div class="col-lg-4 d-flex flex-column text-center" data-aos="zoom-in" data-aos-offset="200">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/formations/ressources-humaines.jpg'?>" class="img-fluid" alt="">
                 <div class="desc">
                     <h4>Gestionnaire de Personnel</h4>
@@ -104,7 +104,7 @@
     </div>
 </section>
 
-<section id="section-fdfp" class="mb-4">
+<section id="section-fdfp">
     <div class="container">
         <div class="row">
             <div class="col d-flex align-items-center">
@@ -156,6 +156,13 @@
     </div>
 </section>
 
+<section id="section-contact-now" class="mt-5" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
+    <div class="container d-flex align-items-start justify-content-center">
+        <p class="mt-md-1 mt-lg-1 mt-xl-1" data-aos="fade-left">Vous aussi vous pouvez bénéficier de nos formations</p>
+        <a href="contact.html" class="btn-link ml-md-4 ml-lg-4 ml-xl-4" data-aos="zoom-in" data-aos-offset="200">Contactez-nous</a>
+    </div>
+</section>
+
 <section class="section-header">
     <div class="container text-center">
         <h2 data-aos="fade-right">Ils nous font confiance</h2>
@@ -166,11 +173,7 @@
 <section id="section-partners">
     <div class="container">
         <div class="d-flex justify-content-around align-items-center">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/partners/linode.svg'?>" class="img-fluid" alt="">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/partners/linux.svg'?>" class="img-fluid" alt="">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/partners/lyft.svg'?>" class="img-fluid" alt="">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/partners/magento.svg'?>" class="img-fluid" alt="">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/partners/paypal.svg'?>" class="img-fluid" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/partners/fdfp.png'?>" class="img-fluid" alt="Logo FDFP" style="width: 200px">
         </div>
     </div>
 </section>

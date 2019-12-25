@@ -64,7 +64,6 @@
 							<a class="list-inline-item" href="#"><li class="fab fa-facebook-f"></li></a>
 							<a class="list-inline-item" href="#"><li class="fab fa-linkedin-in ml-2"></li></a>
 							<a class="list-inline-item" href="#"><li class="fab fa-twitter ml-2"></li></a>
-							<a class="list-inline-item" href="#"><li class="fab fa-youtube ml-2"></li></a>
 							<a class="list-inline-item" href="#"><li class="fab fa-instagram ml-2"></li></a>
 						</ul>
                     </div>
@@ -85,8 +84,6 @@
 			<li class="fas fa-chevron-up"></li>
 		</a>
 
-        <script type='text/javascript' src='<?php echo get_template_directory_uri() . '/vendor/jquery-3.4.1.min.js' ?>'></script>
-
         <?php wp_footer(); ?>
 
         <script type="text/javascript">
@@ -100,6 +97,25 @@
                         $("#scroll-top").fadeIn('slow');
                     } else {
                         $("#scroll-top").fadeOut('slow');
+                    }
+                });
+
+                $(".owl-carousel").owlCarousel({
+                    margin: 30,
+                    items: 2,
+                    loop: true,
+                    nav: false,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    responsive : {
+                        0: {
+                            items: 1
+                        },
+
+                        768: {
+                            items: 2
+                        }
                     }
                 });
             });

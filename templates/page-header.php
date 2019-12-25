@@ -13,4 +13,6 @@ if( have_posts() ) {
 <?php
     }
 }
+
+wp_reset_query();
 ?>

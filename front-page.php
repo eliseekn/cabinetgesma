@@ -6,14 +6,13 @@
         <h1 class="display-3"> Cabinet GESMA</h1>
         <p>Une expertise à l'échelle des PME locales depuis 1998.</p>
 
-        <a href="<?php echo site_url( '/a-propos' ); ?>" class="btn-link">En savoir plus</a>
-        <a href="<?php echo site_url( '/contact' ); ?>" class="btn-link ml-lg-4 ml-md-4 ml-xl-4">Contactez-nous</a>
+        <a href="#a-propos" class="btn-link">En savoir plus</a>
     </div>
 
     <img src="<?php echo get_template_directory_uri() . '/assets/img/logos/vague.png'; ?>" class="img-fluid" alt="Vague Cabinet GESMA" data-aos="fade-left" data-aos-offset="200">
 </header>
 
-<section class="section-header container">
+<section class="section-header container" id="a-propos">
     <h2 data-aos="fade-left">Qui sommes-nous?</h2>
     <hr>
 </section>
@@ -29,7 +28,7 @@
                     par le FDFP pour la formation professionnelle.
                 </p>
 
-                <p class="text-justify">
+                <p class="text-justify mb-5">
                     Nous accompagnons au quotidien des responsables et dirigeants
                     de PME soucieux d’une bonne organisation et d'un suivi
                     administratif rigoureux de leurs structures.
@@ -38,29 +37,32 @@
 
             <div class="col" data-aos="fade-left" data-aos-offset="200">
                 <h3 class="mb-4">Nos prestations</h3>
-                <div class="text-justify">
+                <div class="text-justify mb-5">
                     <p>
                         <li class="far fa-plus-square"></li>
-                        <span>Assitance</span> <br>
-                        Consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
+                        <span>Assitance Comptable et Fiscale</span><br>
+                        Nous accompagnons les PME dans leur stratégie
                     </p>
 
                     <p>
                         <li class="far fa-plus-square"></li>
-                        <span>Conseil</span> <br>
-                        Consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
+                        <span>Conseil en Gestion d'Entreprise</span><br>
+                        Nous aidons les dirigeants de PME à avoir une meilleure
+                        gestion de leur entreprise.
                     </p>
 
                     <p>
                         <li class="far fa-plus-square"></li>
-                        <span>Formations</span> <br>
-                        Consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
+                        <span>Formation Professionnelle</span> <br>
+                        Nous participons à fomrer .
                     </p>
                 </div>
             </div>
+        </div>
+
+        <div class="text-center py-4">
+            <a href="#expertise" class="btn-link mx-2" data-aos="zoom-in">Nos domaines d'expertise</a>
+            <a href="<?php echo site_url( '/contact' ); ?>" class="btn-link mx-2" data-aos="zoom-in">Contactez-nous</a>
         </div>
     </div>
 </section>
@@ -94,7 +96,7 @@
     </div>
 </section>
 
-<section class="section-header">
+<section class="section-header" id="expertise">
     <div class="container text-center">
         <h4 data-aos="fade-left">Expertise</h4>
         <h2 data-aos="fade-right" data-aos-offset="200">Ce que nous savons faire</h2>
@@ -163,6 +165,10 @@
                 </div>
             </div>
         </div>
+
+        <div class="text-center py-5">
+            <a href="<?php echo site_url( '/expertise' ); ?>" class="btn-link" data-aos="zoom-in">Tous nos domaines d'expertise</a>
+        </div>
     </div>
 </section>
 
@@ -187,7 +193,7 @@
             <div class="col d-flex flex-column text-center" data-aos="zoom-in">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/graduate.jpeg'; ?>" alt="Image étudiant diplômé" width="100%" height="250px">
                 <div class="desc">
-                    <a href="">
+                    <a href="<?php echo site_url( '/formations' ); ?>#certifications">
                         <h4>Certifications professionnelles</h4>
                     </a>
                     <p>
@@ -195,13 +201,16 @@
                         dans les domaines de la comptabilité, la gestion des
                         ressources humaines et du secrétariat de direction.
                     </p>
+                    <a href="<?php echo site_url( '/formations' ); ?>#certifications" class="read-more">
+                        Découvrez nos formations
+                    </a>
                 </div>
             </div>
 
             <div class="col d-flex flex-column text-center" data-aos="zoom-in" data-aos-offset="200">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/logos/fdfp.png'; ?>" alt="Logo FDFP" width="100%" height="250px">
                 <div class="desc">
-                    <a href="">
+                    <a href="<?php echo site_url( '/formations' ); ?>#fdfp">
                         <h4>Formations agréées FDFP</h4>
                     </a>
                     <p>
@@ -209,6 +218,9 @@
                         dans les domaines de la gestion, du management, de la
                         comptabilité, de la communication et bien d'autres.
                     </p>
+                    <a href="<?php echo site_url( '/formations' ); ?>#fdfp" class="read-more">
+                        Découvrez nos formations
+                    </a>
                 </div>
             </div>
         </div>
@@ -217,20 +229,20 @@
 
 <section class="section-header">
     <div class="container text-center">
-        <h4 data-aos="fade-left">Offres d'emploi</h4>
+        <h4 data-aos="fade-left">Offres d'Emploi</h4>
         <h2 data-aos="fade-right" data-aos-offset="200">Nos dernières offres d'emploi</h2>
         <hr>
     </div>
 </section>
 
-<section id="section-news">
+<section class="section-news">
     <div class="container">
-        <div class="row">
+        <div class="row owl-carousel owl-theme">
 
             <?php
             $args = array(
                 'post_type' => 'emploi',
-                'posts_per_page' => 2
+                'posts_per_page' => 5
             );
 
             $posts = new WP_Query( $args );
@@ -252,7 +264,7 @@
         </div>
 
         <div class="text-center mt-5">
-            <a href="<?php echo site_url( '/emploi' ); ?>" class="btn-link"  data-aos="zoom-in">Voir plus d'offres</a>
+            <a href="<?php echo site_url( '/emploi' ); ?>" class="btn-link" data-aos="zoom-in">Voir plus d'offres</a>
         </div>
     </div>
 </section>
@@ -260,55 +272,45 @@
 <section class="section-header">
     <div class="container text-center">
         <h4 data-aos="fade-left">Actualité</h4>
-        <h2 data-aos="fade-right" data-aos-offset="200">Nos derniers articles</h2>
+        <h2 data-aos="fade-right" data-aos-offset="200">Nos dernières news</h2>
         <hr>
     </div>
 </section>
 
-<section id="section-news">
+<section class="section-news">
     <div class="container">
-        <div class="row">
+        <div class="row owl-carousel owl-theme">
 
             <?php
-            $recent_posts = wp_get_recent_posts(
-                array(
-                    'post_type' => 'post',
-                    'numberposts' => '2'
-                )
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 5
             );
+
+            $posts = new WP_Query( $args );
+
+            while ( $posts->have_posts() ) {
+                $posts->the_post();
             ?>
 
-            <?php if ( has_post_thumbnail( $recent_posts[0]['ID'] ) ) { ?>
-            <div class="col-lg-7" style="<?php echo set_background( get_the_post_thumbnail_url( $recent_posts[0]['ID'], 'full' ) ); ?>">
+            <?php if ( has_post_thumbnail() ) { ?>
+            <div class="col" style="<?php echo set_background( get_the_post_thumbnail_url( null, 'full' ) ); ?>">
             <?php } else { ?>
-            <div class="col-lg-7">
-            <?php } ?>
-                <a href="<?php echo get_permalink( $recent_posts[0]['ID'] ); ?>"><?php echo $recent_posts[0]['post_title']; ?></a>
-    			<p class="_text-muted">Publié le <?php echo get_the_date( 'j F Y', $recent_posts[0]['ID'] ); ?></p>
-    			<div class="text-justify">
-                    <?php echo mb_strimwidth($recent_posts[0]['post_content'], 0, 250, '...'); ?>
-                </div>
-                <a href="<?php echo get_permalink( $recent_posts[0]['ID'] ); ?>" class="read-more">
-                    Lire la suite
-                </a>
-            </div>
-
             <div class="col">
-                <a href="<?php echo get_permalink( $recent_posts[1]['ID'] ); ?>"><?php echo $recent_posts[1]['post_title']; ?></a>
-    			<p class="_text-muted">Publié le <?php echo get_the_date( 'j F Y', $recent_posts[1]['ID'] ); ?></p>
-    			<div class="text-justify">
-                    <?php echo mb_strimwidth( $recent_posts[1]['post_content'], 0, 140, '...' ); ?>
-                </div>
-                <a href="<?php echo get_permalink( $recent_posts[1]['ID'] ); ?>" class="read-more">
-                    Lire la suite
+            <?php } ?>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    			<p class="_text-muted">Publié le <?php the_date(); ?></p>
+    			<div class="text-justify"><?php the_content(); ?></div>
+                <a href="<?php the_permalink(); ?>" class="read-more">
+                    Voir l'offre
                 </a>
             </div>
 
-            <?php wp_reset_query(); ?>
+            <?php } wp_reset_query(); ?>
         </div>
 
         <div class="text-center mt-5">
-            <a href="<?php echo site_url( '/blog' ); ?>" class="btn-link" data-aos="zoom-in">Voir plus d'articles</a>
+            <a href="<?php echo site_url( '/actualite' ); ?>" class="btn-link" data-aos="zoom-in">Voir plus d'articles</a>
         </div>
     </div>
 </section>
@@ -325,5 +327,21 @@
 </section>
 
 <?php include_once( get_template_directory() . '/templates/testimonials.php' ); ?>
+
+<section class="section-header">
+    <div class="container text-center">
+        <h4 data-aos="fade-left">Partenaires</h4>
+        <h2 data-aos="fade-right" data-aos-offset="200">Ils nous font confiance</h2>
+        <hr>
+    </div>
+</section>
+
+<section id="section-partners">
+    <div class="container">
+        <div class="d-flex justify-content-around align-items-center">
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/partners/fdfp.png'?>" class="img-fluid" alt="Logo FDFP" style="width: 200px">
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>

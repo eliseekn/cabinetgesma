@@ -4,18 +4,18 @@
 
 <section id="section-presentation">
     <div class="container">
-        <img src="<?php echo get_template_directory_uri() . '/assets/img/team-all.jpg'?>" class="img-fluid float-right pl-4" alt="" width="550px" data-aos="zoom-in" data-aos-offset="200">
+        <img src="<?php echo get_template_directory_uri() . '/assets/img/team-all.jpg'?>" class="img-fluid float-right pl-4" alt="" width="550px" data-aos="zoom-in" data-aos-offset="150">
 
         <div>
             <p class="text-justify">
-                La Société à Responsabilité Limitée dénommée <span>GETION MARKETING MANAGEMENT</span>,
+                La Société dénommée <span>GETION MARKETING MANAGEMENT</span>,
                 par abréviation <span>CABINET GESMA SARL</span>, est située à Daloa,
                 Quartier Baoulé, rue de l'ancienne Station Bra Kanon, à 150 m de
                 la Chambre Régionale des Métiers.
             </p>
 
             <p class="text-justify">
-                Fondée par Feu DJIEZION Téhé Jérôme, le Centre d'assitance aux
+                Fondé par Feu DJIEZION Téhé Jérôme, le Centre d'assitance aux
                 techniques de Gestion, du Marketing et du Management est progressivement
                 passé d'entreprise individuelle à Société SARL en 2010. Cependant,
                 suite au décès du partriache, une réfome lancée en 2016 à mener
@@ -36,14 +36,15 @@
             </p>
 
             <p class="text-justify">
-                Pour y parvenir, la mission du Cabinet sera de développer un accompagnement
-                d'expertise conseil à l'échelle de ces PME.
+                Pour y parvenir, la mission du Cabinet sera de <span>développer un accompagnement
+                d'expertise conseil à l'échelle de ces PME</span>.
             </p>
 
             <p class="text-justify">
                 La pratique du métier de conseil et l'exécution des missions qui
                 sont confiées au Cabinet s'articulent autour de cinq valeurs que
-                sont : l'ETHIQUE, la METHODE, la RIGUEUR, l'HUMILITE et la PATIENCE.
+                sont : l'<span>ETHIQUE</span>, la <span>METHODE</span>, la <span>RIGUEUR</span>,
+                l'<span>HUMILITE</span> et la <span>PATIENCE</span>.
             </p>
 
             <p class="text-justify">
@@ -97,9 +98,7 @@
                     <p class="_text-muted">Lorem Ipsum</p>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
             <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490154.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">
@@ -123,9 +122,7 @@
                     <p class="_text-muted">Lorem Ipsum</p>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
+            
             <div class="col-lg-4 col-sm-6 mb-5 team-card">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/team/P1490154.jpg'?>" class="img-fluid" alt="">
                 <div class="text-center">

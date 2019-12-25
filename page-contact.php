@@ -58,31 +58,31 @@ if ( isset($_POST['submitted'] ) ) {
 <section id="section-contact">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-lg-7">
                 <form action="<?php the_permalink(); ?>" method="post">
-                    <div class="d-flex justify-content-between mb-4">
-                        <div class="d-flex flex-column">
+                    <div class="row">
+                        <div class="col form-group">
                             <label for="">Nom (Obligatoire)</label>
-                            <input type="text" name="contact-name" required="required" class="form-control" style="width:330px">
+                            <input type="text" name="contact-name" required="required" class="form-control">
                         </div>
 
-                        <div class="d-flex flex-column">
+                        <div class="col form-group">
                             <label for="">Email (Obligatoire)</label>
-                            <input type="email" name="contact-email" required="required" class="form-control" style="width:330px">
+                            <input type="email" name="contact-email" required="required" class="form-control">
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column mb-4">
+                    <div class="form-group">
                         <label for="">Téléphone (Obligatoire)</label>
                         <input type="text" name="contact-phone" class="form-control" required="required">
                     </div>
 
-                    <div class="d-flex flex-column mb-4">
+                    <div class="form-group">
                         <label for="">Objet (Obligatoire)</label>
                         <input type="text" name="contact-subject" class="form-control" required="required">
                     </div>
 
-                    <div class="d-flex flex-column mb-4">
+                    <div class="form-group mb-4">
                         <label for="">Message (Obligatoire)</label>
                         <textarea name="contact-message" required="required" class="form-control" rows="8"></textarea>
                     </div>
@@ -96,6 +96,14 @@ if ( isset($_POST['submitted'] ) ) {
                 <h4>Coordonnées</h4>
                 <hr>
                 <p class="mt-4">
+                    <li class="fas fa-map-marker-alt"></li>
+                    <span class="ml-2">
+                        Daloa, quartier Baoulé, Rue de l'ancienne station Bra
+                        Kanon à 150 m de la Chambre Régionale des Métiers
+                    </span>
+                </p>
+
+                <p>
                     <li class="fas fa-headset"></li>
                     <span class="ml-2">(+225) 32 76 79 63</span>
                 </p>
@@ -125,7 +133,7 @@ if ( isset($_POST['submitted'] ) ) {
                     <span class="ml-2">@cabinetgesma</span>
                 </p>
 
-                <p>
+                <!-- <p>
                     <li class="fab fa-youtube"></li>
                     <span class="ml-2">youtube.com/cabinetgesma</span>
                 </p>
@@ -138,7 +146,7 @@ if ( isset($_POST['submitted'] ) ) {
                         Daloa, quartier Baoulé, Rue de l'ancienne staation Bra
                         Kanon à 150 m de la Chambre Régionale des Métiers
                     </span>
-                </p>
+                </p> -->
             </div>
         </div>
     </div>

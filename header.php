@@ -17,7 +17,7 @@
             </a>
 
             <ul class="d-flex align-items-center" id="infos-header">
-                <div class="d-flex align-items-center pr-3">
+                <div class="d-flex align-items-center pr-lg-3 pr-md-3">
                     <li class="fas fa-map-marker-alt"></li>
                     <div class="d-flex flex-column px-3">
                         <span class="font-weight-bold">Daloa, Quartier Baoulé</span>
@@ -25,11 +25,11 @@
                     </div>
                 </div>
 
-                <div class="d-flex align-items-center pr-3">
+                <div class="d-flex align-items-center pr-lg-3 pr-md-3">
                     <li class="far fa-clock"></li>
                     <div class="d-flex flex-column px-3">
                         <span class="font-weight-bold">Lun-Ven 8h-17h30</span>
-                        <span class="text-muted">Horaires d'ouverture</span>
+                        <span class="text-muted">Horaires d'Ouverture</span>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                     <li class="fas fa-headset"></li>
                     <div class="d-flex flex-column px-3">
                         <span class="font-weight-bold">(+225) 32 76 79 63</span>
-                        <span class="text-muted">Cabinetgesma@gmail.com</span>
+                        <span class="text-muted">Secrétariat de Direction</span>
                     </div>
                 </div>
             </ul>
@@ -102,9 +102,6 @@
                         </a>
                         <a href="" class="nav-item nav-link pr-3">
                             <li class="fab fa-twitter"></li>
-                        </a>
-                        <a href="" class="nav-item nav-link pr-3">
-                            <li class="fab fa-youtube"></li>
                         </a>
                         <a href="" class="nav-item nav-link">
                             <li class="fab fa-instagram"></li>

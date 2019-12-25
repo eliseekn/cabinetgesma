@@ -271,6 +271,13 @@
     </div>
 </section>
 
+<section id="section-contact-now" class="mt-5" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
+    <div class="container d-flex align-items-start justify-content-center">
+        <p class="mt-md-1 mt-lg-1 mt-xl-1" data-aos="fade-left">Besoin d'une assistance en gestion, marketing ou management?</p>
+        <a href="<?php echo site_url( '/contact' ); ?>" class="btn-link ml-md-4 ml-lg-4 ml-xl-4" data-aos="zoom-in" data-aos-offset="200">Contactez-nous</a>
+    </div>
+</section>
+
 <?php include_once( get_template_directory() . '/templates/testimonials.php' ); ?>
 
 <?php get_footer(); ?>

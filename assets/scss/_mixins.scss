@@ -1,16 +1,14 @@
-@mixin background-image($url, $color) {
-    background: linear-gradient(
-        to right,
-        rgba($color, .8), rgba($color, .8)
-    ), url($url) no-repeat;
-    background-position: center;
-    background-size: cover;
+@mixin transition($attr, $time, $type) {
+    transition: $attr $time $type !important;
+    -moz-transition: $attr $time $type !important;
+    -o-transition: $attr $time $type !important;
+    -webkit-transition: $attr $time $type !important;
 }
 
 @mixin btn-link() {
-    text-decoration: none;
+    text-decoration: none !important;
     background-color: $darker-yellow;
-    padding: .8em 2em;
+    padding: 1em 2em;
     color: white !important;
     border: none;
     border-radius: 50px;
@@ -18,6 +16,6 @@
     &:hover {
         color: $yellow !important;
         box-shadow: 0 0 5px $darker-yellow !important;
-        text-decoration: none;
+        text-decoration: none !important;
     }
 }

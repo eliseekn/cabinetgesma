@@ -2,10 +2,10 @@
 
 <header class="text-center" id="header" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
     <div class="container">
-        <h1 data-aos="fade-left">Résultats de la recherche pour "<?php echo get_search_query(); ?>"</h1>
+        <h1 class="mb-5" data-aos="fade-left">Résultats de la recherche pour "<?php echo get_search_query(); ?>"</h1>
 
         <form action="<?php echo site_url( '/' ); ?>" action="get" data-aos="zoom-in" data-aos-offset="200">
-            <input type="search" name="s" id="search" placeholder="<?php get_search_query(); ?>" required="required">
+            <input type="search" name="s" id="search" value="<?php echo get_search_query(); ?>" required="required">
             <input type="submit" value="Rechercher" class="btn-link">
 
             <?php if ( get_post_type() == 'emploi' ) { ?>
@@ -67,7 +67,7 @@
     </div>
 </section>
 
-<?php } else { ?>
+<?php }  else { ?>
 
 <section class="section-header">
     <div class="container text-center">
