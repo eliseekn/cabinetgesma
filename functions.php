@@ -101,12 +101,10 @@ function send_mail( $args = array() ) {
         return false;
     }
 
-    if ( !isset( $args['subject'] ) || !isset( $args['message'] )
+    if ( !isset( $args['to'] ) || !isset( $args['subject'] ) || !isset( $args['message'] )
         || !isset( $args['headers'] ) ) {
         return false;
     }
-
-    $to = get_option( 'admin_email' );
 
     if ( isset( $args['attachment'] ) ) {
 		$allowed_ext = array( "doc", "docx", "pdf" );
@@ -119,9 +117,9 @@ function send_mail( $args = array() ) {
 		$args['attachment'] = WP_CONTENT_DIR . '/uploads/' . basename( $_FILES['contact-cv']['name'] );
     	move_uploaded_file( $_FILES['contact-cv']['tmp_name'], $args['attachment'] );
 
-        return wp_mail( $to, $args['subject'], $args['message'], $args['headers'], $args['attachment'] );
+        return wp_mail( $args['to'], $args['subject'], $args['message'], $args['headers'], $args['attachment'] );
     } else {
-        return wp_mail( $to, $args['subject'], $args['message'], $args['headers'] );
+        return wp_mail( $args['to'], $args['subject'], $args['message'], $args['headers'] );
     }
 }
 

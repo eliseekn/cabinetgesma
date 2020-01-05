@@ -1,12 +1,12 @@
 <?php
-if ( isset($_POST['submitted'] ) ) {
+if ( isset( $_POST['submitted'] ) ) {
 	$args = array(
+		'to' => 'emploi@cabinetgesma.com',
 		'subject' => "Candidature pour l'offre d'emploi: " . $_POST['job-title'],
-		'message' => "Candidature de " . $_POST['contact-name'],
+		'message' => "Candidature de <" . $_POST['contact-name'] . ">",
 		'headers' => array(
-			'to: <' . get_option( 'admin_email' ) . '>',
 			'From: Cabinet GESMA <noreply@cabinetgesma.com>',
-			'Reply-To: ' . $_POST['contact-email']
+			"Reply-To: " . $_POST['contact-name'] . " <" . $_POST['contact-email'] . ">"
 		),
 		'attachment' => true
 	);
@@ -17,7 +17,7 @@ if ( isset($_POST['submitted'] ) ) {
 
 <?php get_header(); ?>
 
-<header class="text-center" id="header" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
+<header class="text-center" id="header" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png' ); ?>">
     <div class="container">
         <h1 data-aos="fade-left">Offre d'emploi</h1>
     </div>

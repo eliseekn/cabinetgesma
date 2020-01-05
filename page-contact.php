@@ -1,13 +1,13 @@
 <?php
-if ( isset($_POST['submitted'] ) ) {
+if ( isset( $_POST['submitted'] ) ) {
     $args = array(
+		'to' => 'contact@cabinetgesma.com',
         'subject' => $_POST['contact-subject'],
-        'message' => "Message de " . $_POST['contact-name'] . " (" . $_POST['contact-phone'] . ")\r\n" . $_POST['contact-message'],
+        'message' => "<" . $_POST['contact-name'] . ": " . $_POST['contact-phone'] . ">\r\n\r\n" . $_POST['contact-message'],
         'headers' => array(
-			'to: <' . get_option( 'admin_email' ) . '>',
-            'From: Cabinet GESMA <noreply@cabinetgesma.com>',
-            'Reply-To: ' . $_POST['contact-email']
-        ),
+			'From: Cabinet GESMA <noreply@cabinetgesma.com>',
+			"Reply-To: " . $_POST['contact-name'] . " <" . $_POST['contact-email'] . ">"
+        )
     );
 
     $email_sent = send_mail( $args );
@@ -110,7 +110,7 @@ if ( isset($_POST['submitted'] ) ) {
 
                 <p>
                     <li class="fas fa-envelope"></li>
-                    <span class="ml-2">Cabinetgesma@gmail.com</span>
+                    <span class="ml-2">cabinetgesma@gmail.com</span>
                 </p>
 
                 <p class="mt-4">
