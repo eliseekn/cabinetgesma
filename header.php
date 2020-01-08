@@ -5,6 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="eliseekn">
+        <meta name="description" content="Le Cabinet GESMA SARL est un centre d'assistance 
+        et de conseil en gestion d'entreprise qui est agréé par le FDFP pour la formation 
+        professionnelle. Nous accompagnons au quotidien des responsables et dirigeants 
+        de PME soucieux d’une bonne organisation et d'un suivi administratif rigoureux de 
+        leurs structures.">
 
         <?php wp_head(); ?>
 
@@ -52,15 +57,15 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link <?php if (is_front_page()) { echo ' active'; } ?>" href="<?php echo home_url( '/' ); ?>">Accueil</a>
+                            <a class="nav-link <?php if ( is_front_page() ) { echo ' active'; } ?>" href="<?php echo home_url( '/' ); ?>">Accueil</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link <?php if (is_page( 'a-propos' )) { echo ' active'; } ?>" href="<?php echo site_url( '/a-propos' ); ?>">A propos</a>
+                            <a class="nav-link <?php if ( is_page( 'a-propos' ) ) { echo ' active'; } ?>" href="<?php echo site_url( '/a-propos' ); ?>">A propos</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle <?php if (is_page( 'expertise' )) { echo ' active'; } ?>" href="" id="navbarDropdownMenu1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle <?php if ( is_page( 'expertise' ) ) { echo ' active'; } ?>" href="" id="navbarDropdownMenu1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Expertise
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu1">
@@ -71,7 +76,7 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle <?php if (is_page( 'formations' )) { echo ' active'; } ?>" href="" id="navbarDropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle <?php if ( is_page( 'formations' ) ) { echo ' active'; } ?>" href="" id="navbarDropdownMenu2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Formations
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu2">
