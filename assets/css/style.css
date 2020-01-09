@@ -662,6 +662,13 @@ footer hr {
     margin-top: 2em;
   }
 }
+#section-contact .col-lg-4 a {
+  color: white;
+}
+#section-contact .col-lg-4 a:hover {
+  color: #fce522;
+  text-decoration: none;
+}
 #section-contact li {
   font-size: 1.3rem;
 }
@@ -738,7 +745,7 @@ footer hr {
 }
 
 #section-team .team-card {
-  padding: 0 2em;
+  padding: 0 4em;
 }
 #section-team .team-card div {
   background: linear-gradient(to bottom, #944a00, #805a0c);

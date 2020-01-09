@@ -159,7 +159,7 @@
 <section id="section-contact-now" class="mt-5" style="<?php echo set_background( get_template_directory_uri() . '/assets/img/logos/vague.png'); ?>">
     <div class="container d-flex align-items-start justify-content-center">
         <p class="mt-md-1 mt-lg-1 mt-xl-1" data-aos="fade-left">Vous aussi vous pouvez bénéficier de nos formations</p>
-        <a href="contact.html" class="btn-link ml-md-4 ml-lg-4 ml-xl-4" data-aos="zoom-in" data-aos-offset="200">Contactez-nous</a>
+        <a href="<?php echo site_url( '/contact' ); ?>" class="btn-link ml-md-4 ml-lg-4 ml-xl-4" data-aos="zoom-in" data-aos-offset="200">Contactez-nous</a>
     </div>
 </section>
 

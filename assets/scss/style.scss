@@ -709,6 +709,15 @@ footer {
             margin: 0 1em;
             margin-top: 2em;
         }
+
+        a {
+            color: white;
+
+            &:hover {
+                color: $yellow;
+                text-decoration: none;
+            }
+        }
     }
 
     li {
@@ -797,7 +806,7 @@ footer {
 
 #section-team {
     .team-card {
-        padding: 0 2em;
+        padding: 0 4em;
 
         div {
             background: linear-gradient(to bottom, $darker-yellow, $dark-yellow);

@@ -50,7 +50,7 @@
 
                         <p>
                             <li class="fas fa-envelope"></li>
-                            <span class="ml-2">cabinetgesma@gmail.com</span>
+                            <span class="ml-2">contact@cabinetgesma.com</span>
                         </p>
 
                         <p>

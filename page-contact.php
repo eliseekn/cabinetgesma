@@ -105,12 +105,16 @@ if ( isset( $_POST['submitted'] ) ) {
 
                 <p>
                     <li class="fas fa-headset"></li>
-                    <span class="ml-2">(+225) 32 76 79 63</span>
+                    <span class="ml-2">
+                        <a href="tel:+22532767963">(+225) 32 76 79 63</a>
+                    </span>
                 </p>
 
                 <p>
                     <li class="fas fa-envelope"></li>
-                    <span class="ml-2">cabinetgesma@gmail.com</span>
+                    <span class="ml-2">
+                        <a href="mailto:contact@cabinetgesma.com">contact@cabinetgesma.com</a>
+                    </span>
                 </p>
 
                 <p class="mt-4">
@@ -120,17 +124,23 @@ if ( isset( $_POST['submitted'] ) ) {
 
                 <p>
                     <li class="fab fa-facebook-f"></li>
-                    <span class="ml-2">facebook.com/cabinetgesma</span>
+                    <span class="ml-2">
+                        <a href="">cabinetgesma</a>
+                    </span>
                 </p>
 
                 <p class="mt-4">
                     <li class="fab fa-linkedin"></li>
-                    <span class="ml-2">linkedin.com/in/cabinetgesma</span>
+                    <span class="ml-2">
+                        <a href="">cabinetgesma</a>
+                    </span>
                 </p>
 
                 <p>
                     <li class="fab fa-twitter"></li>
-                    <span class="ml-2">@cabinetgesma</span>
+                    <span class="ml-2">
+                        <a href="">@cabinetgesma</a>
+                    </span>
                 </p>
 
                 <!-- <p>
