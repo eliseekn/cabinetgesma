@@ -143,12 +143,14 @@ if ( isset( $_POST['submitted'] ) ) {
                     </span>
                 </p>
 
-                <!-- <p>
+                <p>
                     <li class="fab fa-youtube"></li>
-                    <span class="ml-2">youtube.com/cabinetgesma</span>
+                    <span class="ml-2">
+                        <a href="">cabinetgesma</a>
+                    </span>
                 </p>
 
-                <h4 class="mt-4">Localisation</h4>
+                <!-- <h4 class="mt-4">Localisation</h4>
                 <hr>
                 <p class="mt-4">
                     <li class="fas fa-map-marker-alt"></li>

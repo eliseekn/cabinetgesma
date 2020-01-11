@@ -65,6 +65,7 @@
 							<a class="list-inline-item" href="#"><li class="fab fa-linkedin-in ml-2"></li></a>
 							<a class="list-inline-item" href="#"><li class="fab fa-twitter ml-2"></li></a>
 							<a class="list-inline-item" href="#"><li class="fab fa-instagram ml-2"></li></a>
+							<a class="list-inline-item" href="#"><li class="fab fa-youtube ml-2"></li></a>
 						</ul>
                     </div>
                 </div>

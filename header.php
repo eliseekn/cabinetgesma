@@ -111,6 +111,9 @@
                         <a href="" class="nav-item nav-link">
                             <li class="fab fa-instagram"></li>
                         </a>
+                        <a href="" class="nav-item nav-link">
+                            <li class="fab fa-youtube"></li>
+                        </a>
                     </ul>
                 </div>
             </div>
