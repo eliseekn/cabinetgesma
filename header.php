@@ -99,19 +99,19 @@
                     </ul>
 
                     <ul class="navbar-nav ml-auto" id="social-icons-nav">
-                        <a href="" class="nav-item nav-link pr-3">
+                        <a href="https://web.facebook.com/cabinetgesma/" class="nav-item nav-link pr-3">
                             <li class="fab fa-facebook-f"></li>
                         </a>
-                        <a href="" class="nav-item nav-link pr-3">
+                        <!-- <a href="" class="nav-item nav-link pr-3">
                             <li class="fab fa-linkedin-in"></li>
-                        </a>
-                        <a href="" class="nav-item nav-link pr-3">
+                        </a> -->
+                        <!-- <a href="" class="nav-item nav-link pr-3">
                             <li class="fab fa-twitter"></li>
-                        </a>
-                        <a href="" class="nav-item nav-link">
+                        </a> -->
+                        <!-- <a href="" class="nav-item nav-link">
                             <li class="fab fa-instagram"></li>
-                        </a>
-                        <a href="" class="nav-item nav-link">
+                        </a> -->
+                        <a href="https://www.youtube.com/channel/UCCiL1taRK1me9XshXo7rhGg/featured" class="nav-item nav-link">
                             <li class="fab fa-youtube"></li>
                         </a>
                     </ul>

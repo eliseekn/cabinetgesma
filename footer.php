@@ -61,11 +61,21 @@
                         <h3 class="mt-5">Nous suivre</h3>
                         <hr>
                         <ul class="list-inline mt-4">
-							<a class="list-inline-item" href="#"><li class="fab fa-facebook-f"></li></a>
-							<a class="list-inline-item" href="#"><li class="fab fa-linkedin-in ml-2"></li></a>
-							<a class="list-inline-item" href="#"><li class="fab fa-twitter ml-2"></li></a>
-							<a class="list-inline-item" href="#"><li class="fab fa-instagram ml-2"></li></a>
-							<a class="list-inline-item" href="#"><li class="fab fa-youtube ml-2"></li></a>
+							<a class="list-inline-item" href="https://web.facebook.com/cabinetgesma/">
+                                <li class="fab fa-facebook-f"></li>
+                            </a>
+							<!-- <a class="list-inline-item" href="#">
+                                <li class="fab fa-linkedin-in ml-2"></li>
+                            </a> -->
+							<!-- <a class="list-inline-item" href="#">
+                                <li class="fab fa-twitter ml-2"></li>
+                            </a> -->
+							<!-- <a class="list-inline-item" href="#">
+                                <li class="fab fa-instagram ml-2"></li>
+                            </a> -->
+							<a class="list-inline-item" href="https://www.youtube.com/channel/UCCiL1taRK1me9XshXo7rhGg/featured">
+                                <li class="fab fa-youtube ml-2"></li>
+                            </a>
 						</ul>
                     </div>
                 </div>

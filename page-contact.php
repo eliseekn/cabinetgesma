@@ -125,28 +125,35 @@ if ( isset( $_POST['submitted'] ) ) {
                 <p>
                     <li class="fab fa-facebook-f"></li>
                     <span class="ml-2">
-                        <a href="">cabinetgesma</a>
+                        <a href="https://web.facebook.com/cabinetgesma/">Cabinet GESMA Sarl</a>
                     </span>
                 </p>
 
-                <p class="mt-4">
+                <!-- <p class="mt-4">
                     <li class="fab fa-linkedin"></li>
                     <span class="ml-2">
                         <a href="">cabinetgesma</a>
                     </span>
-                </p>
+                </p> -->
 
-                <p>
+                <!-- <p>
                     <li class="fab fa-twitter"></li>
                     <span class="ml-2">
                         <a href="">@cabinetgesma</a>
                     </span>
-                </p>
+                </p> -->
+
+                <!-- <p>
+                    <li class="fab fa-instagram"></li>
+                    <span class="ml-2">
+                        <a href="">@cabinetgesma</a>
+                    </span>
+                </p> -->
 
                 <p>
                     <li class="fab fa-youtube"></li>
                     <span class="ml-2">
-                        <a href="">cabinetgesma</a>
+                        <a href="https://www.youtube.com/channel/UCCiL1taRK1me9XshXo7rhGg/featured">Cabinet GESMA Sarl</a>
                     </span>
                 </p>
 
